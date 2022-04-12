@@ -123,7 +123,7 @@
 .mbmenu_two_vlist{padding:10px 0}
 .mbmenu_two_vlist > li{}
 .mbmenu_two_vlist > li:last-of-type{border-bottom:0;}
-.mbmenu_two_vlist > li.active .mbmenu_two{color:#b14487;text-decoration: underline;}
+.mbmenu_two_vlist > li.active .mbmenu_two{color:#b14487;}
 .mbmenu_two{display:block;position:relative;padding:3px 15px;font-size:15px;color:#323232;font-size:350;}
 li.has_three .mbmenu_two{padding-bottom:7px;}
 li.has_three .mbmenu_two:after{display:none;}
@@ -173,15 +173,15 @@ li.has_three .mbmenu_two:after{display:none;}
 .subcont_wrap.mtype2{margin-top:10px;}
 .subdep2_vtitle{font-size:30px;color:#111111;line-height:1;font-family: 'GmarketSansMedium';letter-spacing: -1px;}
 .sctab_hlist_w{margin-top:19px;}
-.sctab_hlist{background:#f8f9fb;display:flex;text-align:center;align-items: center;text-align: center;}
-.sctab_hlist > li{flex:1;border-right:1px solid #dfe0e1;position:relative;}
+.sctab_hlist{background:#f8f9fb;display:flex;text-align:center;text-align: center;}
+.sctab_hlist > li{flex:1;border-right:1px solid #dfe0e1;position:relative;display:flex;align-items: center;justify-content: center;}
 .sctab_hlist > li:last-of-type{border-right:0;}
 .sctab_hlist > li.active{z-index:2;}
 .sctab_hlist > li.active .sctab{background:#fff;border-color:#4264c2;color:#4264c2;
     -webkit-box-shadow: 0px 0px 12px 2px rgba(66,100,194,0.30); 
     box-shadow: 0px 0px 12px 2px rgba(66,100,194,0.30);
 }
-.sctab{display:flex;align-items:center;border:1px solid transparent;box-sizing:border-box;text-align:center;padding-top:6px;justify-content:center;height:66px;font-size:18px;color:#323232;font-family: 'GmarketSansMedium';letter-spacing: -1px;line-height:1.2;}
+.sctab{display:flex;align-items:center;width:100%;border:1px solid transparent;box-sizing:border-box;text-align:center;padding-top:6px;justify-content:center;height:66px;font-size:18px;color:#323232;font-family: 'GmarketSansMedium';letter-spacing: -1px;line-height:1.2;}
 
 .subdep3_vobj_zone{margin-top:45px;}
 .subdep3_vtitle_fxwrap{display:flex;justify-content: space-between;align-items:flex-end;border-bottom:1px solid #c5c6d5;}
