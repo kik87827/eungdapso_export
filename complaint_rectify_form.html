@@ -305,7 +305,9 @@
 							<h2 class="subdep3_vtitle">시정일반 질의ㆍ건의</h2>
 							<span class="subdep3_vsub">생활 속 불편사항 신고, 각종 건의 및 질의 등을 위한 창구입니다.</span>
 						</div>
-						<a href="javascript:;" data-toggleTarget="#toggleTarget_01" class="btn_deptailcall"><span class="deptailcall_in">시정일반 질의·건의 안내보기 <span class="hdtext">열기</span></span></a>
+						<div class="btn_deptailcall_w">
+							<a href="javascript:;" data-toggleTarget="#toggleTarget_01" class="btn_deptailcall"><span class="deptailcall_in">시정일반 질의·건의 안내보기 <span class="hdtext">열기</span></span></a>
+						</div>
 					</div>
 					<div class="subdep3_vtoggle_item" id="toggleTarget_01">
 						<div class="subdep3_vtoggle_inner">
@@ -317,15 +319,14 @@
 						</div>
 					</div>
 					<div class="svitem_zone">
-						<div class="svbox_fxwrap" id="rawbox">
+						<a href="javascript:;" class="svbox_fxwrap" id="btn_complaint_call" title="민원처리에 관한 법률 팝업 열기">
 							<div class="svbox_sig">
 								<p class="svsig_ment"><span class="svsig_emp">확인해주세요!</span> 민원처리에 관한 법률</p>
 								<p class="svsub_ment">민원인의 권리와 의무, 민원처리의 예외, 반복 및 중복 민원의 처리</p>
 							</div>
-							<div class="svbox_else"><a href="javascript:;" title="팝업 열기" id="btn_complaint_call" class="btn_svtail">자세히보기</a></div>
-						</div>
-						<div class="btn_sigitem_wrap mtype2">
-							<div class="btn_sigitem_left"></div>
+							<div class="svbox_else"><span class="btn_svtail">자세히보기</span></div>
+						</a>
+						<div class="btn_sigitem_wrap atype2 mtype2">
 							<div class="btn_sigitem_right">
 								<a href="#" class="btn_sigbox dtype2">임시저장 불러오기</a>
 							</div>
@@ -333,7 +334,7 @@
 					</div>
 				</div>
 				<!-- // subdep3_vobj_zone -->
-				<div class="subcont_wrap mtype2">
+				<div class="subcont_wrap">
 					<div class="vformitem_wrap">
 						<div class="vformitem">
 							<div class="vformitem_titlow fxtype">
@@ -410,8 +411,8 @@
 											<div class="res_hcell restd">
 												<div class="inrow_form_w">
 													<div class="inrow_formlow inform_fxwrap">
-														<div class="inform_fxform"><input type="text" title="도로명 주소 입력" data-pcwid="220" style="width:220px" class="form_input" disabled id="rp_form05"></div>
-														<div class="inform_fxbtn"><a href="#" class="btn_informtext">도로명주소 검색</a></div>
+														<div class="inform_fxform"><input type="text" title="주소 입력" data-pcwid="220" style="width:220px" class="form_input" disabled id="rp_form05"></div>
+														<div class="inform_fxbtn"><a href="javascript:;" title="도로명주소 검색 팝업 열기" class="btn_informtext">도로명주소 검색</a></div>
 													</div>
 													<div class="inrow_formlow inform_fxfull">
 														<div class="inform_fxfull_item"><input type="text" class="form_input" title="주소명 입력" disabled></div>
@@ -539,7 +540,7 @@
 											</div>
 											<div class="res_hcell restd">
 												<div class="count_textarea_wrap">
-													<textarea rows="10" cols="10" class="ctextarea" id="vmwon_item03" placeholder="※재난긴급생활비 지원관 관련한 민원은 원활한 상담 및 처리를 위해 민원 내용 안에 ‘자치구명’과 ‘동명’을 명기해 주시기 바랍니다."></textarea>
+													<textarea rows="10" cols="10" title="내용 입력" class="ctextarea" id="vmwon_item03" placeholder="※재난긴급생활비 지원관 관련한 민원은 원활한 상담 및 처리를 위해 민원 내용 안에 ‘자치구명’과 ‘동명’을 명기해 주시기 바랍니다."></textarea>
 													<div class="ctarea_low">
 														<span class="cnum_inwrap">
 															<span class="cnum_current">0</span>
@@ -1077,12 +1078,12 @@
 				<div class="ftvitem02_fxin">
 					<div class="ftg_hitem_fzone">
 						<div class="ftv_hitem_fxwrap">
-							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link">민원편람</a></div>
-							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link">무인민원발급기 위치</a></div>
-							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link">온라인 민원발급</a></div>
-							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link">민원 안내관</a></div>
-							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link">응답소 민원 통계</a></div>
-							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link">민원공개사례</a></div>
+							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원편람 바로가기">민원편람</a></div>
+							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="무인민원발급기 위치 바로가기">무인민원발급기 위치</a></div>
+							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="온라인 민원발급 바로가기">온라인 민원발급</a></div>
+							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원 안내관 바로가기">민원 안내관</a></div>
+							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="응답소 민원 통계 바로가기">응답소 민원 통계</a></div>
+							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원공개사례 바로가기">민원공개사례</a></div>
 						</div>
 					</div>
 					<div class="ftv_banner_wrap">
