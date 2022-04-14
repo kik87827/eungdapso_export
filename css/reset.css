@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* default */
-@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css); */
 @import url('webfont.css');
 * {margin:0;padding:0;word-break:break-all; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -o-text-size-adjust: none; -ms-text-size-adjust: none; text-size-adjust:none; -webkit-tap-highlight-color: rgba(255,255,255,0);}
 body {font-family: 'Noto Sans KR',Dotum,verdana,sans-serif;font-size:12px;}
