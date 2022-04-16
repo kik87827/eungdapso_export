@@ -172,7 +172,7 @@ li.has_three .mbmenu_two:after{display:none;}
 .subcont_zone{padding:80px 30px 0 30px;max-width:1100px;margin:0 auto 0;position:relative;}
 .subcont_zone > *:first-of-type{margin-top:0;}
 .subcont_wrap{margin-top:10px;}
-.subcont_wrap.mtype2{margin-top:10px;}
+.subcont_wrap.mtype2{margin-top:30px;}
 .subdep2_vtitle{font-size:30px;color:#111111;line-height:1;font-family: 'GmarketSansMedium';letter-spacing: -1px;}
 .sctab_hlist_w{margin-top:19px;}
 .sctab_hlist{background:#f8f9fb;display:flex;text-align:center;text-align: center;}
