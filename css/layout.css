@@ -52,6 +52,7 @@
 .hthm_list > li{margin-bottom:6px;}
 .hthm_list > li:last-of-type{margin-bottom:0;}
 .btn_headsearch{display:block;width:40px;height:40px;background:url("../images/ico_topsearch.png") no-repeat 50% 50%/26px auto;}
+.btn_headsearch.mode_del{border-radius:100%;background:#b14487 url("../images/btn_topsearchclose.png") no-repeat 50% 50%/100% auto;}
 .gnb_depbg{background:#fff;position:absolute;top:100%;left:0;width:100%;z-index:1;display:none;}
 .gnb_depbg:after{display:block;content:'';width:100%;height:9px;background:url("../images/gnb_shadow.png") repeat-x 0 0;position:absolute;top:100%;left:0;}
 .header_wrap.active .htm_vlist_w{border-top-color:#f37223;}
@@ -234,6 +235,7 @@ li.has_three .mbmenu_two:after{display:none;}
 .emp_outlink{color:#b14487;display:inline-block;position:relative;padding-right:17px;}
 .emp_outlink:after{display:inline-block;content:'';width:13px;height:13px;background:url("../images/ico_textlink.png") no-repeat 0 0/100% auto;position:absolute;top:7px;right:0;}
 .subdep3_vtoggle_item .important_vlist{padding-top:18px;margin-top:18px;border-top:1px solid #dcdfe2;}
+.subdep3_vtoggle_item .important_vlist.type2{margin-top:15px;padding-top:0;border-top:0;}
 
 .svitem_zone{margin-top:20px;}
 .svbox_fxwrap{display:flex;align-items:center;justify-content:space-between;border:2px solid #e0e0e0;border-radius:18px;padding:19px 30px 15px 150px;background:url("../images/sc_bg01.png") no-repeat 40px 100%/87px auto;}
@@ -246,6 +248,7 @@ li.has_three .mbmenu_two:after{display:none;}
 .btn_sigitem_wrap{margin-top:10px;display:flex;justify-content: space-between;font-size:0;line-height:0;}
 .btn_sigitem_wrap.mtype2{margin-top:30px}
 .btn_sigitem_wrap.atype2{justify-content: flex-end;}
+.btn_sigitem_wrap.postype2{margin-bottom:20px;}
 .btn_sigitem_left{}
 .btn_sigbox{font-size:17px;color:#646464;border:2px solid #c5c5c5;word-break:keep-all;border-radius:3px;line-height:1;display:inline-block;font-weight:500;min-width:70px;text-align:center;padding:15px 20px 18px}
 .btn_sigbox.dtype2{border-color:#b14487;background-color:#b14487;color:#fff;}
@@ -328,6 +331,27 @@ select.friend_site{color:#222;font-size:15px;border:0;height: 36px;box-sizing:bo
 .subcont_titlow{margin-bottom:12px;}
 .subcont_tit{font-size:30px;color:#111111;font-family: 'GmarketSansMedium';line-height:1;letter-spacing: -1px;}
 
+.bg_dim{position:fixed;top:0;left:0;width:100%;height:100%;background:#000;z-index:8;opacity:.6;display:none;}
+.search_toplayer{display:none;position:absolute;top:0;left:0;width:100%;background:#fff;border-top:1px solid #cecfd6;overflow: hidden;overflow-y:auto;}
+.search_toplayer.active{display:block;}
+.search_topfield_w{max-width:550px;margin:0 auto;padding:35px 30px 60px;}
+.search_topfield{border-bottom:2px solid #000000;display:flex;}
+input.search_topinput{border:0;flex:1;width:100%;height:54px;line-height:1;padding:0 15px;font-size:21px;letter-spacing: -1px;}
+
+input.search_topinput::-webkit-input-placeholder{color:#9c9c9c !important;font-family: 'Noto Sans KR';}
+input.search_topinput::-moz-input-placeholder{color:#9c9c9c !important;font-family: 'Noto Sans KR';}
+input.search_topinput:-ms-input-placeholder{color:#9c9c9c !important;font-family: 'Noto Sans KR';}
+input.search_topinput::-ms-input-placeholder{color:#9c9c9c !important;font-family: 'Noto Sans KR';}
+input.search_topinput::input-placeholder{color:#9c9c9c !important;font-family: 'Noto Sans KR';}
+
+.btn_topsearch_submit{display:block;width:54px;height:54px;background:url("../images/ico_topsearch_form.png") no-repeat 50% 50%/30px auto;}
+.search_keyword_low{margin-top:10px;display:flex;}
+.top_keyword_label_w{flex:0;}
+.top_keyword_label{display:inline-block;white-space: nowrap;font-size:17px;color:#4f74d4;font-family: 'GmarketSansMedium';padding:12px 15px 9px;background:#eef2f8;border-radius: 100px;}
+.top_keyword_flist{flex:1;display:flex;flex-wrap:wrap;}
+.top_keyword_flist > li{margin:8px 0 0 10px;}
+.top_keyword_flist > li:last-of-type{}
+.top_keyword{display:inline-block;font-size:17px;color:#666666;white-space: nowrap;}
 
 @media (max-width:1099px){
     .headgnb_list_wrap{margin-right:30px}
@@ -356,6 +380,14 @@ select.friend_site{color:#222;font-size:15px;border:0;height: 36px;box-sizing:bo
     .btn_mbmenucall_in:after{display:block;content:'';width:22px;height:2px;background:#000;}
     .btn_mbmenucall_in:before{transform: translateY(-8px) translateX(-2px);}
     .btn_mbmenucall_in:after{transform: translateY(6px) translateX(-2px);}
+
+    .btn_headsearch.mode_del{background-image:url("../images/btn_topsearchclose_m.png"); background-size:55% auto;background-color:#fff;}
+    .search_topfield_w{padding:20px 20px 40px;}
+    .search_topfield{}
+    .btn_topsearch_submit{width:45px;height:45px;}
+    input.search_topinput{height:45px;padding:0 10px;font-size:18px;letter-spacing:0;}
+    .top_keyword_label{font-size:14px;}
+    .top_keyword{font-size:14px;}
 
     .map_toggle_current{display:none;}
     .map_depth_vlist_wrap{display:inline !important;position:static;background:none;border:0;width:auto}
@@ -406,7 +438,7 @@ select.friend_site{color:#222;font-size:15px;border:0;height: 36px;box-sizing:bo
 
 
     .svitem_zone{margin-top:15px;}
-    .svbox_fxwrap{background:url("../images/sc_bg01_mb.png") no-repeat 98% 100%/88px auto;padding:15px 12px 10px 25px;align-items: flex-start;border-radius:9px;}
+    .svbox_fxwrap{background:url("../images/sc_bg01_mb.png") no-repeat 98% 100%/88px auto;padding:15px 12px 10px 15px;align-items: flex-start;border-radius:9px;}
     .svsig_ment{font-size:21px;}
     .svsig_emp{display:block;font-size:16px;font-family: 'GmarketSansBold';margin-bottom:3px;}
     .svsub_ment{font-size:15px;color:#737886;margin-top:8px;}
@@ -414,7 +446,7 @@ select.friend_site{color:#222;font-size:15px;border:0;height: 36px;box-sizing:bo
     .svbox_else{padding-top:0}
     .btn_sigitem_wrap{flex-direction:column-reverse;justify-content:flex-start}
     .btn_sigitem_wrap.mtype2{margin-top:20px;}
-    .btn_sigitem_wrap.atype2{justify-content: flex-end;}
+    .btn_sigitem_wrap.atype2{justify-content: flex-end;flex-direction: row;}
     .btn_sigitem_right{display:flex;justify-content: flex-end;}
     .btn_sigitem_right .btn_sigbox{display:inline-block;}
     .btn_sigitem_left{text-align:right;margin-top:5px;}
@@ -440,6 +472,7 @@ select.friend_site{color:#222;font-size:15px;border:0;height: 36px;box-sizing:bo
     .emp_outlink{padding-right:17px;}
     .emp_outlink:after{top:4px;}
     .subdep3_vtoggle_item .important_vlist{padding-top:10px;margin-top:10px;}
+    .subdep3_vtoggle_item .important_vlist.type2{margin-top:10px;}
 
 
     .footer_wrap{margin:50px 0 25px}
