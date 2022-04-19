@@ -466,7 +466,7 @@ function headerAction(){
 			closeAction();
 		}
 	});
-	openCloseAction();
+	// openCloseAction();
 
 	
 	// $(".hdout_item").on("focus",function(){

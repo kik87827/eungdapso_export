@@ -7,6 +7,8 @@
 .mb_item2{display:inline-block;width:0;height:0;overflow:hidden;line-height:0;color:transparent;position:absolute;top:0;left:-99999px;}
 .c_emp *,
 .c_emp{color:#b14487 !important;}
+.b_emp *,
+.b_emp{color:#608bf1 !important;}
 .pc_br{display:block;}
 .mb_br{display:none;}
 .page_wrap ::-webkit-scrollbar {width: 10px;}
@@ -55,6 +57,10 @@
 .bchkrd_hlist > li{margin-right:24px;}
 .bchkrd_hlist > li:last-of-type{margin-right:0;}
 
+.subcont_gtitlow{margin:0 0 18px;}
+.subcont_gtit{position:relative;top:-3px;font-size:30px;color:#111111;line-height:1;font-family: 'GmarketSansMedium';letter-spacing: -1px;}
+.subcont_gcontlow{}
+.subcont_gcopy{font-size:21px;word-break:keep-all;color:#2f3649;font-family: 'GmarketSansMedium';letter-spacing: -1px;}
 
 @media (max-width:1023px){
     .pc_br{display:none;}
@@ -68,6 +74,13 @@
     .pc_item{display:none !important;}
     .mb_item{display:block !important;}
     .mb_item2{display:inline-block !important;position:static;width:auto;height:auto;font-size:inherit;line-height:inherit;overflow: visible;color:inherit}
+
+        
+    .subcont_gtitlow{margin:0 0 5px;text-align:center;}
+    .subcont_gtit{font-size:25px;text-align:center;}
+    .subcont_gcontlow{}
+    .subcont_gcopy{font-size:16px;letter-spacing: 0;text-align:center;}
+
 }
 /* // 공통 */
 
@@ -668,6 +681,7 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
 .vguide_form_low{display:flex;justify-content: flex-end; margin-top:10px;}
 .vguide_form_low .bchkrd_hlist{}
 .btn_botsubmit_zone{margin-top:35px;border-top:2px solid #e5e5e5;text-align: center;padding-top:10px}
+.btn_botsubmit_zone.dtype2{margin-top:10px;text-align: right;border:0;padding:0;}
 .botsubmit_copy{font-size:21px;color:#111111;letter-spacing: -1px;font-family: 'GmarketSansMedium';line-height:1.4;}
 .botsubmit_emp{color:#4f64bb;}
 .btn_bothlayout_fxwrap{display:flex;justify-content: space-between;align-items: center;margin-top:15px;}
@@ -678,6 +692,7 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
 .btn_bcsubmit{display:inline-block;border:2px solid #c5c5c5;font-weight:500;border-radius:4px;vertical-align:middle;font-size:17px;line-height:1;padding:14px 14px 15px;min-width:114px;text-align: center;}
 .btn_bcsubmit.dtype2{background-color:#404040;border-color:#404040;color:#fff;}
 .btn_bcsubmit.dtype3{background-color:#4f64bb;border-color:#4f64bb;color:#fff;}
+.btn_bcsubmit.dtype4{background-color:#b14487;border-color:#b14487;color:#fff;}
 
 .vform_titemp_fxwrap{}
 .vform_titemp_fxwrap.ftype2{display:flex;flex-wrap:wrap;align-items: center;}
@@ -842,6 +857,7 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
     .vguide_inlow{margin-bottom:20px;}
     .vgnumcont{margin-left:15px;}
     .btn_botsubmit_zone{margin-top:20px;padding-top:10px}
+    .btn_botsubmit_zone.dtype2{text-align:center;}
     .botsubmit_copy{font-size:18px;}
     .btn_bothlayout_fxwrap{margin-top:15px;}
     .btn_bothcell .btn_bcsubmit{margin-right:2px;}
@@ -942,3 +958,33 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
     .svdiagram_hlist > li{width:50%;flex-basis: 50%;border-bottom:1px solid #eceff9;}
     .svdiagram_hlist > li.svdia_seclast{flex-basis: 50%;}
 }
+
+
+/* 무인발급기 */
+.mapview_fxwrap{display:flex;border-top:1px solid #c5c6d5;margin-top:10px;padding-top:15px;}
+.mapview_fxtab_g{flex:0 0 27.27272727272727%;background:#f8f9fb;border-radius:4px;}
+.mapview_fxtab_flist{display:flex;flex-wrap:wrap;position:relative;}
+.mapview_fxtab_flist > li{box-sizing:border-box;position:relative;width:33.333333333333333333333%;border-bottom:1px solid #dfe0e1;border-right:1px solid #dfe0e1;display:flex;align-items: center;justify-content: center;text-align:center;}
+.mapview_fxtab_flist > li:nth-of-type(3n){border-right:0;}
+
+.mapview_fxtab_flist > li.active{z-index:2;}
+.mapview_fxtab_flist > li.active .mapview_fxtab{background:#fff;border-color:#4264c2;color:#4264c2;
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(66,100,194,0.30); 
+    box-shadow: 0px 0px 12px 2px rgba(66,100,194,0.30);
+}
+.mapview_fxtab_flist > li.active .mapview_fxtab .fxtab_in{color:#4264c2;}
+/*  */
+.mapview_fxtab_flist:after{display:block;content:'';width:100%;position:absolute;bottom:0;left:0;height:1px;background:#fff;}
+.mapview_fxtab{display:flex;align-items:center;width:100%;border:1px solid transparent;justify-content:center;padding:15px 0;}
+.fxtab_in{font-size:16px;color:#323232;display:inline-block;font-family: 'GmarketSansMedium';position:relative;top:2px;}
+.mapview_fxtab{}
+.mapview_fxtab.active .fxtab_in{}
+.mapview_fxcont_g{flex:1;margin-left:20px;}
+.mapview_mapapi_zone{}
+.mapview_mapifame{}
+@media (max-width:1023px){
+    .mapview_fxwrap{display:block;}
+   .fxtab_in{font-size:14px;}
+    .mapview_fxcont_g{margin:20px -20px 0 -20px;height:450px;}
+}
+/* // 무인발급기 */
