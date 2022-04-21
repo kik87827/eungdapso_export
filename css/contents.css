@@ -316,6 +316,7 @@ input.loginput{border:1px solid #c5c9d5;border-radius:3px;box-sizing: border-box
 
 /* 검색박스 */
 .sortfield_box{border:2px solid #ededed;padding:20px 25px 25px;margin-top:40px;}
+.sortfield_box.mtype2{margin-top:0;}
 .sf_low{}
 .sf_low.define_ment{margin-bottom:12px;}
 .sf_low.define_searchform{}
@@ -409,7 +410,7 @@ input.sfinput::input-placeholder{color:#646464;}
 }
 
 /* 게시판 */
-.respon_lkcont{margin-top:40px;}
+.respon_lkcont{margin-top:37px;}
 .rp_lkment{font-size:16px;letter-spacing: -.5px;position:relative;padding-left:20px;min-height:16px;display:flex;flex-wrap:wrap;margin-bottom:15px;}
 .rp_lkment:before{display:block;content:'';width:13px;height:16px;background:url("../images/ico_docu.png") no-repeat 0 0/100% auto;position:absolute;top:5px;left:0;opacity:.5;}
 .rplk_count{color:#111;}
