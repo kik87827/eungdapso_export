@@ -655,7 +655,7 @@ function dimLayerControl(){
 	var readywidth = $(window).width();
 	
 	var objThis = this;
-	$modal.on("click",".btn_layerclose,.closetrigger,.fullpop_dim",function(e){
+	$modal.on("click",".btn_layerclose,.closetrigger,.fullpop_dim,.pop_dim",function(e){
 		var $this = $(this),
 			$t_p = $this.parents(".dimlayer_z"),
 			$t_back = $($t_p.attr("data-closefocus"));
