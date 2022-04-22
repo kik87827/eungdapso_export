@@ -1056,10 +1056,10 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
 .svdia_sectitle_wrap{flex:1;display:flex;align-items: center;flex-direction: column;padding-top:10px;font-family: 'GmarketSansMedium';letter-spacing: -1px;}
 .svdia_title{font-size:22px;color:#6cc795;line-height:1;word-break: keep-all;}
 .svdia_copy{font-size:17px;color:#505050;line-height:1.4;word-break: keep-all;}
-.sct_empbox{background:#f2f0fa;border-radius:17px;position:relative;padding:20px 24px 20px 77px;display:flex;align-items: center;justify-content: space-between;}
-.sct_empbox:before{display:block;content:'';width:28px;height:26px;background:url("../images/ico_starword_bullon.png") no-repeat 0 0/100% auto;position:absolute;top:27px;left:40px;}
+.sct_empbox{background:#f2f0fa;border-radius:17px;position:relative;padding:22px 24px 22px 77px;display:flex;align-items: center;justify-content: space-between;}
+.sct_empbox:before{display:block;content:'';width:28px;height:26px;background:url("../images/ico_starword_bullon.png") no-repeat 0 0/100% auto;position:absolute;top:25px;left:40px;}
 .sct_empsig{padding-bottom:3px;}
-.sct_empsig_copy{color:#222;font-size:22px;font-family: 'GmarketSansMedium';letter-spacing: -1px;}
+.sct_empsig_copy{color:#222;font-size:22px;font-family: 'GmarketSansMedium';letter-spacing: -1px;line-height:1.3;}
 .sct_empsig_copy .c_emp{}
 .sct_empsub_copy{font-size:18px;color:#737886;line-height:1.2;font-weight:500;}
 .sct_empelse{text-align: right;line-height: 0;}
@@ -1078,6 +1078,15 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
     .svdia_title{font-size:14px;}
     .svdia_title .mb_item2{margin-right:3px;}
     .svdia_copy{font-size:12px;margin-top:2px;}
+
+    .sct_empbox{border-radius:10px;padding:20px 24px 20px 55px;display:block;}
+    .sct_empbox:before{position:absolute;top:21px;left:20px;transform: scale(.9);}
+    .sct_empsig{padding-bottom:3px;}
+    .sct_empsig_copy{font-size:18px;}
+    .sct_empsig_copy .c_emp{}
+    .sct_empsub_copy{font-size:14px;}
+    .btn_sctemp{display:block;font-size:15px;text-align: center;margin-top:20px}
+
 }
 @media (max-width:740px){
     .svdiagram_hlist{flex-wrap:wrap;}
