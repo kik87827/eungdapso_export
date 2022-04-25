@@ -29,6 +29,8 @@ function commonResize() {
 
 		subForm();
 		reformFunc();
+		maxLabel();
+		responTable();
 		if ($(window).width() < resizePartWidth) {
 
 		} else {
@@ -57,6 +59,26 @@ function mobileMenuRock(target){
 }
 
 
+/* max label width 값 세팅 */
+function maxLabel(){
+	var $reslabel_parent = $(".reslabel_parent");
+	$(".reslabel").css({"min-width":""});
+	$reslabel_parent.each(function(){
+		var $this = $(this);
+		var $this_label = $this.find(".reslabel");
+		var max_wid = [];
+		$this_label.each(function(){
+			max_wid.push($(this).outerWidth());
+		});
+		if($(window).width()>1023){
+			if($this_label.hasClass("pc_elsewid")){
+				return;
+			}
+		}
+		$this_label.css({ "min-width" : Math.max.apply(null,max_wid) });
+	});
+}
+
 /* 스크롤 넓이 구하기 */
 function getScrollBarWidth() {
 	var $outer = $('<div>').css({visibility: 'hidden', width: 100, overflow: 'scroll'}).appendTo('body'),
@@ -64,6 +86,22 @@ function getScrollBarWidth() {
 	$outer.remove();
 	return 100 - widthWithScroll;
 };
+
+function responTable(){
+	var $respon_list = $(".respon_list");
+	$respon_list.each(function(){
+		var $respon_tr = $(this).find("tbody tr");
+		var $respon_td_label = $respon_tr.find(".mbtd_fxlabel");
+		var max_wid = [];
+		$(".mbtd_fxlabel").css({"min-width":""});
+		$respon_td_label.each(function(){
+			$(this).each(function(){
+				max_wid.push($(this).outerWidth());
+			});
+		});
+		$respon_td_label.css({"min-width" : Math.max.apply(null,max_wid)});
+	});
+}
 
 
 
@@ -764,7 +802,9 @@ function dimLayerShow(option){
 		}
 		function heightcheck(){
 			if(touchIs){
-				$("body").data("data-scr",$(window).scrollTop()).css({"margin-top":-$(window).scrollTop()}).append($target);
+				if(option.scrollCheck == undefined){
+					$("body").data("data-scr",$(window).scrollTop()).css({"margin-top":-$(window).scrollTop()}).append($target);
+				}
 				$("html").addClass("touchDis");
 			}else{
 				if(boxzoneHeight > $(window).height()){
