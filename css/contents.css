@@ -61,6 +61,11 @@ input[type="checkbox"].chkrd:checked{border-color:#b14487;background-color:#b144
 .bchkrd_hlist > li{margin-right:24px;}
 .bchkrd_hlist > li:last-of-type{margin-right:0;}
 
+.chkrd_vlist{}
+.chkrd_vlist > li{margin-bottom:5px;}
+.chkrd_vlist > li .chkrd_item{}
+.chkrd_vlist > li:last-of-type{margin-bottom:0;}
+
 .subcont_gtitlow{margin:0 0 18px;}
 .subcont_gtit{position:relative;top:-3px;font-size:30px;color:#111111;line-height:1;font-family: 'GmarketSansMedium';letter-spacing: -1px;}
 .subcont_gcontlow{}
@@ -160,6 +165,18 @@ input[type="checkbox"].chkrd:checked{border-color:#b14487;background-color:#b144
 }
 .norpop_modal .btn_layerclose:before{transform:rotate(45deg);-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);}
 .norpop_modal .btn_layerclose:after{transform:rotate(-45deg);-ms-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
+.infield_fxwrap{display:flex;align-items: center;}
+.infield_fxlong{flex:1;}
+.infield_fxlong .form_input{}
+.infield_fxshort{flex:0;margin-left:4px;}
+.btn_infield{font-size:17px;display:inline-block;background:#4264c2;box-sizing:border-box;white-space: nowrap;font-weight:500;height:42px;line-height: 42px;padding:0 12px 0;min-width:94px;text-align: center;color:#fff;border-radius:4px;}
+.inelse_fxwrap{display:flex;justify-content: space-between;align-items: center;margin-top:24px;border-top:2px solid #ececec;padding:10px 0 20px;}
+.inelse_fitem{margin-right:5px}
+.inelse_fitem:last-of-type{margin-right:0;}
+.inelse_copy{font-size:16px;color:#828282;word-break: keep-all;}
+.inelse_fitem .btn_informtext{margin:0;padding-left:20px;padding-right:20px;}
+.nguide_copy{font-size:17px;line-height:1.4;color:#505050;}
+.nguide_formbox{margin-top:10px;background:#f5f8fc;border-top:1px solid #ececec;padding:10px 20px;}
 
 
 @media screen and (min-width: 1920px) {
@@ -178,6 +195,7 @@ input[type="checkbox"].chkrd:checked{border-color:#b14487;background-color:#b144
     .btn_lyskin_close{width:50px;height:50px;}
     .btn_lyskin_close:before,
     .btn_lyskin_close:after{width:24px;height:2px;margin:-1px 0 0 -12px;}
+    .norpop_item{padding:20px;}
         
     .scdep_tab_hlist_w{margin-top:20px;}
     .scdep_tab_hlist{height:auto;}
@@ -196,7 +214,17 @@ input[type="checkbox"].chkrd:checked{border-color:#b14487;background-color:#b144
     .norpop_intit{font-size:20px;}
     .norpop_incont{font-size:15px;}
     .norpop_modal .btn_layerclose{top:8px;right:8px;}
-    .norpop_cont{padding:45px 20px 0;}
+    .norpop_cont{padding:37px 20px 0;}
+
+    .infield_fxwrap{display:flex;align-items: center;}
+    .infield_fxlong{flex:1;}
+    .infield_fxlong .form_input{}
+    .infield_fxshort{flex:0;margin-left:4px;}
+    .btn_infield{font-size:14px;height:35px;line-height: 35px;padding:0 6px 0;min-width:70px;}
+    .inelse_fitem .btn_informtext{padding-left:10px;padding-right:10px;}
+    .nguide_copy{font-size:15px;}
+    .inelse_copy{font-size:14px;}
+    .nguide_formbox{padding:15px;}
 }
 
 /* 로그인 */
@@ -493,7 +521,7 @@ input.sfinput::input-placeholder{color:#646464;}
 .data_pnelse_low{text-align:right;position:absolute;top:0;right:0;}
 .btn_dataquad{display:inline-block;font-size:17px;color:#fff;font-weight:500;border-radius:3px;line-height:1;white-space:nowrap;padding:15px 15px 16px;box-sizing: border-box;min-width:104px;text-align: center;background:#404374;}
 .btn_qustion{display:inline-block;width:19px;height:19px;background:url("../images/ico_qustion.png") no-repeat 50% 50%/100% auto;vertical-align: middle;}
-
+.btn_quadobj{display:inline-block;font-size:16px;color:#fff;background:#6cc795;border-radius:4px 4px 0 4px;padding:10px 20px 11px;line-height:1;letter-spacing: -.5px;;}
 @media (max-width:1023px) {
    .respon_lkcont{margin-top:20px;}
     .rp_lkment{font-size:15px;padding-left:18px;margin-bottom:10px;}
@@ -724,6 +752,7 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
 .btn_bcsubmit.dtype2{background-color:#404040;border-color:#404040;color:#fff;}
 .btn_bcsubmit.dtype3{background-color:#4f64bb;border-color:#4f64bb;color:#fff;}
 .btn_bcsubmit.dtype4{background-color:#b14487;border-color:#b14487;color:#fff;}
+.btn_bcsubmit.dtype5{background-color:#fff;border-color:#c6d0ed;color:#4f64bb;}
 .btn_bcsubmit.mintype2{min-width:86px;}
 .btn_bcsubmit.mintype3{min-width:132px;}
 
@@ -940,6 +969,7 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
 
 @media (max-width:359px) {
     .btn_bcsubmit{font-size:14px;min-width:60px;}
+    .btn_bcsubmit{border-width:1px;font-size:16px;min-width:60px !important;}
 }
 
 /* 완료 */

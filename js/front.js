@@ -658,7 +658,9 @@ function dimLayerControl(){
 	$modal.on("click",".btn_layerclose,.closetrigger,.fullpop_dim,.pop_dim",function(e){
 		var $this = $(this),
 			$t_p = $this.parents(".dimlayer_z"),
-			$t_back = $($t_p.attr("data-closefocus"));
+			$t_back = $($t_p.attr("data-closefocus")),
+			$t_back_class = $($t_p.attr("data-closeClass")),
+			$t_back_class_index = $t_p.attr("data-closeClassIndex");
 		e.preventDefault();
 		objThis.dimLayerHide({ 
 			target : $t_p,
@@ -666,6 +668,9 @@ function dimLayerControl(){
 				setTimeout(function(){
 					if($t_back.length){
 						$t_back.focus();
+					}
+					if($t_back_class.length){
+						$t_back_class.eq($t_back_class_index).focus();
 					}
 				},40);
 			}
@@ -694,7 +699,7 @@ function dimLayerShow(option){
 		$modal = $(".dimlayer_z");
 		
 		$target = $(option.target);
-		$t_box = $target.find(".layer_box");
+		$t_box = $target.find(".norpop_modal");
 		$t_td = $target.find(".dimlayer_td");
 		$t_box_cont = $target.find(".layer_cont");
 		$t_tpt = parseInt($t_td.css("padding-top"));
@@ -727,6 +732,7 @@ function dimLayerShow(option){
 			$fullpop_contlow = $target.find(".fullpop_contlow");
 			$fullpop_item = $target.find(".fullpop_item");
 		}
+
 
 		setTimeout(function(){
 			if ($target.hasClass("fulltype")) {
