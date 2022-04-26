@@ -951,7 +951,8 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
 .confirm_vcontlow .respon_form{}
 
 .confirm_vitem_w{margin-top:40px;}
-
+.restd_incont{width:100%;box-sizing: border-box;padding:5px 0 10px;}
+.restd_incont .viewer_file_low{margin-top:0;}
 @media (max-width:1160px){
     .res_hcell.resth{flex-basis: 120px;}
 }
@@ -1115,6 +1116,9 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
     .confirm_vcontlow .respon_form{}
 
     .confirm_vitem_w{margin-top:20px;}
+
+    .restd_incont{padding:0 0 5px;}
+    .restd_incont .viewer_file_low{margin-top:0;}
 }
 
 @media (max-width:374px) {
