@@ -11,6 +11,7 @@ $(function(){
 	// subContentsTogglefunc();
 	scform();
 	datePicker();
+	//alert($("html").attr("class"))
 });
 $(window).on("load",function(){
 	submapMenu();
