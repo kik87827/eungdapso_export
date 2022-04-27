@@ -1164,7 +1164,7 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
 .board_viewer_contbox{padding:40px 30px}
 .board_vcont{}
 .board_vcont *{word-break: break-all;}
-.board_vcont img{max-width: 100% !important;width:auto !important;}
+.board_vcont img{max-width: 100% !important;width:auto !important;height:auto !important;}
 .viewer_file_low{margin-top:15px;background:#f4f6fb;}
 .viewer_file{}
 .viewer_file:before{}
