@@ -666,7 +666,7 @@ td.nodata_td .nodata_para{}
     .respon_list tbody td{width:50%;border:0; padding:0 5px 8px;box-sizing: border-box;}
     .respon_list tbody td.mb_wid100{width:100%;}
     .respon_list tbody td.has_btn{padding:0;width:100%;text-align:right;justify-content: flex-end;}
-    .respon_list tbody td.has_btn .mbtd_fxwrap{justify-content: flex-end;}
+    .respon_list tbody td.has_btn .mbtd_fxwrap{justify-content: center;}
     .respon_list tbody td.has_btn .btn_quadobj{margin-bottom:7px;}
     .respon_list tbody td.has_btn .mbtd_fxlabel{display:none;}
     .respon_list tbody td.has_link .rp_inlink_item{margin-top:-5px;}
@@ -681,7 +681,7 @@ td.nodata_td .nodata_para{}
     .ing_text{font-size:14px;letter-spacing:0;}
     td.nodata_td{font-size:14px;padding:80px 10px !important;width:100% !important;box-sizing: border-box;}
     td.nodata_td .nodata_para{}
-    .respon_list tbody td.has_link{width:100%;padding:0 5px 8px;}
+    .respon_list tbody td.has_link{width:100%;padding:0 5px 10px;}
     .respon_list tbody td.has_link .rp_inlink{font-size:18px;font-weight:500;}
 }
 @media (max-width:725px){
@@ -727,7 +727,7 @@ select.form_select{color:#323232;font-size:16px;border:1px solid #c5c9d5;height:
 .vform_coment .vfc_emp{position:relative;top:5px;margin-right:3px;}
 .vfc_emp{font-size:18px;color:#b14487;font-weight:700;line-height:1;}
 .vformitem_contlow{}
-.respon_form{border-top:1px solid #000000;}
+.respon_form{border-top:1px solid #000000;background:#fff;}
 .respon_tr{display:flex;border-bottom:1px solid #e5e5e5;}
 .respon_tr.pchalf{}
 .respon_tr.pchalf .respon_hitem{flex:0 0 50%;}
@@ -867,11 +867,13 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
 .lybullet_vlist > li:last-of-type{}
 .vguide_form_low{display:flex;justify-content: flex-end; margin-top:10px;}
 .vguide_form_low .bchkrd_hlist{}
-.btn_botsubmit_zone{margin-top:35px;border-top:2px solid #e5e5e5;text-align: center;padding-top:10px}
+.btn_botsubmit_zone{margin-top:35px;border-top:2px solid #e5e5e5;text-align: center;padding-top:20px}
+.btn_botsubmit_zone .btn_bothlayout_fxwrap{margin-top:0;}
 .btn_botsubmit_zone.dtype2{margin-top:10px;text-align: right;border:0;padding:0;}
 .botsubmit_copy{font-size:21px;color:#111111;letter-spacing: -1px;font-family: 'GmarketSansMedium';line-height:1.4;}
 .botsubmit_emp{color:#4f64bb;}
 .btn_bothlayout_fxwrap{display:flex;justify-content: space-between;align-items: center;margin-top:15px;}
+.btn_bothlayout_fxwrap.type2{justify-content: flex-end;}
 .btn_bothcell{display:flex;}
 .btn_bothcell .btn_bcsubmit{margin-right:5px;}
 .btn_bothcell .btn_bcsubmit:last-of-type{margin-right:0}
@@ -1072,7 +1074,7 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
     .vguide_box .important_text{font-size:13px;margin:15px 0;}
     .vguide_inlow{margin-bottom:20px;}
     .vgnumcont{margin-left:15px;}
-    .btn_botsubmit_zone{margin-top:20px;padding-top:10px}
+    .btn_botsubmit_zone{margin-top:20px;padding-top:15px}
     .btn_botsubmit_zone.dtype2{text-align:center;}
     .botsubmit_copy{font-size:18px;}
     .btn_bothlayout_fxwrap{margin-top:15px;}
@@ -1198,7 +1200,7 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
 .subcont_contwrap.skintype2 .indent_vitem_w{margin-top:0}
 .board_viewer_contbox.sclinkage_cont{}
 .prevnext_linkage_both{margin-top:30px;padding:30px;border-top:1px solid #e5e5e5;justify-content:space-between;border-bottom:1px solid #e5e5e5;display:flex;align-items: center;}
-.pnlk_item{display:flex;align-items: center;min-width:0;margin-right:30px;}
+.pnlk_item{flex:1;display:flex;align-items: center;min-width:0;margin-right:30px;}
 .pnlk_item:last-of-type{margin-right:0}
 .pnlk_item.pnlk_prev{}
 .pnlk_item.pnlk_next{flex-direction: row-reverse;text-align:right;}
@@ -1422,7 +1424,8 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
     .sct_empsig_copy{font-size:18px;}
     .sct_empsig_copy .c_emp{}
     .sct_empsub_copy{font-size:14px;}
-    .btn_sctemp{display:block;font-size:15px;text-align: center;margin-top:20px}
+    .sct_empelse{margin-left:-31px;text-align: center;}
+    .btn_sctemp{font-size:15px;margin-top:20px}
 
 }
 @media (max-width:740px){
