@@ -177,6 +177,10 @@ li.has_three .mbmenu_two:after{display:none;}
 .subcont_wrap.mtype2{margin-top:30px;}
 .subcont_wrap.mtype3{margin-top:20px;}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+.subcont_wrap.mtype4{margin-top:0;}
+>>>>>>> Stashed changes
 =======
 .subcont_wrap.mtype4{margin-top:0;}
 >>>>>>> Stashed changes
@@ -202,6 +206,12 @@ li.has_three .mbmenu_two:after{display:none;}
 .subdep3_vtitle_fxwrap.active .deptailcall_in:after{background-position:0 -8px}
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+.subdep3_vtitle_low{margin-top:47px;}
+.subdep3_vtitle_low .subdep3_vtitle{padding-bottom:0;}
+
+>>>>>>> Stashed changes
 =======
 .subdep3_vtitle_low{margin-top:47px;}
 .subdep3_vtitle_low .subdep3_vtitle{padding-bottom:0;}
@@ -228,6 +238,8 @@ li.has_three .mbmenu_two:after{display:none;}
 .svdot_vlist > li.type2:before{background-color:#5baa32;}
 .svdot_vlist > li:before{display:block;content:'';width:3px;height:3px;border-radius: 100%; position:absolute;top:14px;left:0;background:#222222;}
 .svdot_vlist > li:last-of-type{}
+.svdot_vlist.dtype2 > li{font-weight:400;font-size:17px;color:#505050}
+.svdot_vlist.dtype2 > li:before{top:12px;background:#505050;}
 .subvtog_sigcopy{font-size:18px;font-weight:500;color:#222;letter-spacing: -1px;margin-bottom:5px;}
 .subdep3_vtoggle_inner .svdash_vlist{margin-top:12px;}
 .subdep3_vtoggle_inner > .important_text{margin-top:12px;font-weight:500;}

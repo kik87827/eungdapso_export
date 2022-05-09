@@ -932,3 +932,19 @@ function setTabControl(element){
     });
     $(element).find($(el_firstFocus)).focus();
 }
+
+
+function accodianFunc(){
+	var $acc_bar = $(".acc_bar");
+	var $acc_vitem = $(".acc_vitem");
+	$acc_bar.on("click",function(e){
+		e.preventDefault();
+		var $t = $(this);
+		var $t_p = $t.parents(".acc_vitem");
+		
+		if($acc_vitem.not($t_p).hasClass("active")){
+			$acc_vitem.not($t_p).removeClass("active");
+		}
+		$t_p.toggleClass("active");
+	});
+}
