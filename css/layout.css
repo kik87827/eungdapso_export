@@ -176,14 +176,7 @@ li.has_three .mbmenu_two:after{display:none;}
 .subcont_wrap{margin-top:30px;}
 .subcont_wrap.mtype2{margin-top:30px;}
 .subcont_wrap.mtype3{margin-top:20px;}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 .subcont_wrap.mtype4{margin-top:0;}
->>>>>>> Stashed changes
-=======
-.subcont_wrap.mtype4{margin-top:0;}
->>>>>>> Stashed changes
 .subdep2_vtitle{font-size:30px;color:#111111;line-height:1;font-family: 'GmarketSansMedium';letter-spacing: -1px;}
 .sctab_hlist_w{margin-top:19px;}
 .sctab_hlist{background:#f8f9fb;display:flex;text-align:center;text-align: center;}
@@ -205,18 +198,9 @@ li.has_three .mbmenu_two:after{display:none;}
 .subdep3_vtitle_fxwrap.active{border-color:#404374;}
 .subdep3_vtitle_fxwrap.active .deptailcall_in:after{background-position:0 -8px}
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 .subdep3_vtitle_low{margin-top:47px;}
 .subdep3_vtitle_low .subdep3_vtitle{padding-bottom:0;}
 
->>>>>>> Stashed changes
-=======
-.subdep3_vtitle_low{margin-top:47px;}
-.subdep3_vtitle_low .subdep3_vtitle{padding-bottom:0;}
-
->>>>>>> Stashed changes
 .subdep3_vobj_zone.dtype2 .subdep3_vtitle_fxwrap{border-bottom:0;}
 .subdep3_vobj_zone.dtype2 .subdep3_vtitle_inwrap{padding-bottom:0;}
 .subdep3_vobj_zone.dtype2 .subdep3_vtitle{padding-bottom:0;}
