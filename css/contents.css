@@ -1664,12 +1664,13 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
     .quad_else_w{margin-top:10px;}
 
     .bullet_vtit_fxwrap{display:block;}
-    .bullet_vtit{align-items: flex-start;}
-    .bullet_vtit::before{position:relative;top:1px !important;}
+    .bullet_vtit{align-items: flex-start;font-size:15px;}
+    .bullet_vtit::before{position:relative;top:1px !important;width:5px;height:5px;flex-basis: 5px;}
 
     .bvtit_else_w{margin-top:5px;}
     .fdl_dt{font-size:14px;}
-    .fdl_dd{font-size:13px;line-height:1.3;}
+    .fdl_dd{font-size:13px;line-height:1.3;top:8px;}
+    .linux .fdl_dd{top:8px;}
     .win .fdl_dd{top:5px;}
 
         
