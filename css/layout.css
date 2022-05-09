@@ -490,8 +490,8 @@ input.search_topinput::input-placeholder{color:#9c9c9c !important;font-family: '
     .subdep3_vtoggle_inner{padding:15px 20px;}
     .subdep3_vtoggle_item .important_text{font-size:14px;padding-left:17px;}
     .svdot_vlist{}
-    .svdot_vlist > li{font-size:15px;padding-left:7px;}
-    .svdot_vlist > li:before{top:10px;}
+    .svdot_vlist > li{font-size:15px !important;padding-left:7px;}
+    .svdot_vlist > li:before{top:10px !important;}
     .subvtog_sigcopy{font-size:15px;}
     .subdep3_vtoggle_inner .svdash_vlist{margin-top:10px;}
     .svdot_sym{color:#5baa32;}
