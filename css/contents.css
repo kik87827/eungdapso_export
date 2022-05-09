@@ -1567,6 +1567,7 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
 .bvc_flist{display:flex;align-items: center;flex-wrap:wrap;}
 .bvc_flist > li{display:flex;font-size:16px;color:#646464;margin:5px 10px 0 0;letter-spacing: -.5px;}
 .bvc_flist > li:before{display:block;content:'';width:11px;height:9px;background:url("../images/ico_checkdesign.png") no-repeat 0 0/100% auto;flex:0 0 11px;margin-right:3px;position:Relative;top:8px;}
+.linux .bvc_flist > li:before{top:5px;}
 .bvc_flist > li:last-of-type{margin-right:0;}
 
 
@@ -1701,7 +1702,17 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
     .bvc_flist > li:before{}
 
     .data_tb_scr_w{margin-right:-20px;}
-    .data_tb_scr_w .data_tb{width:900px}
+    .data_tb_scr_w .data_tb{width:200%;}
+
+    .data_tb thead th{font-size:14px;padding:12px 0;}
+    .data_tb tbody td{padding:12px;}
+    .data_tb tbody td.align_left{padding:12px 15px;}
+    .data_tb thead th:last-of-type,
+    .data_tb tbody td:last-of-type{}
+    .tb_intext{display:inline-block;font-size:14px;}
+    .tb_intext.sztype2{font-size:15px;}
+    .data_tb.sztype2 .tb_intext{font-size:14px}
+
 }
 @media (max-width:740px){
     .svdiagram_hlist{flex-wrap:wrap;}
