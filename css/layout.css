@@ -127,7 +127,10 @@
 .mbmenu_two_vlist > li{}
 .mbmenu_two_vlist > li:last-of-type{border-bottom:0;}
 .mbmenu_two_vlist > li.active .mbmenu_two{color:#b14487;}
-.mbmenu_two{display:block;position:relative;padding:3px 15px;font-size:15px;color:#323232;font-size:350;}
+.mbmenu_two{display:block;position:relative;padding:3px 15px;font-size:15px;color:#323232;font-weight:350;}
+.mbmenu_two.define_blank{}
+.mbmenu_two.define_blank:after{display:inline-block;content:'';width:14px;height:14px;background:url("../images/ico_blank.png") no-repeat 0 0/100% auto;margin-left:3px;}
+
 li.has_three .mbmenu_two{padding-bottom:7px;}
 li.has_three .mbmenu_two:after{display:none;}
 
@@ -165,21 +168,20 @@ li.has_three .mbmenu_two:after{display:none;}
 }
 .sub_map_toggle_wrap.active .map_depth_vlist_wrap{}
 .map_depth_vlist{padding:10px 0;}
-.map_depth_vlist > li{padding:10px 20px 10px 34px;position:relative;}
-.map_depth_vlist > li:after{display:block;content:'';width:4px;height:4px;background:#c5c9d6;border-radius:100%;position:absolute;top:20px;left:22px;}
+.map_depth_vlist > li{padding:7px 20px 7px 34px;letter-spacing: -1px;;position:relative;}
+.map_depth_vlist > li:after{display:block;content:'';width:4px;height:4px;background:#c5c9d6;border-radius:100%;position:absolute;top:18px;left:22px;}
 .map_depth_vlist > li:last-of-type{border-bottom:0;}
 .map_depth{font-size:17px;line-height:1.3;display:inline-block;color:#666;border-bottom:1px solid transparent;}
 .map_depth:hover,.map_depth_vlist > li.active .map_depth{border-color:#1e1e1e;color:#1e1e1e}
+.map_depth.define_blank{}
+.map_depth.define_blank:after{display:inline-block;content:'';width:14px;height:14px;background:url("../images/ico_blank.png") no-repeat 0 0/100% auto;margin-left:5px;}
 
 .subcont_zone{padding:80px 30px 0 30px;max-width:1100px;margin:0 auto 0;position:relative;}
 .subcont_zone > *:first-of-type{margin-top:0;}
 .subcont_wrap{margin-top:30px;}
 .subcont_wrap.mtype2{margin-top:30px;}
 .subcont_wrap.mtype3{margin-top:20px;}
-<<<<<<< Updated upstream
-=======
 .subcont_wrap.mtype4{margin-top:0;}
->>>>>>> Stashed changes
 .subdep2_vtitle{font-size:30px;color:#111111;line-height:1;font-family: 'GmarketSansMedium';letter-spacing: -1px;}
 .sctab_hlist_w{margin-top:19px;}
 .sctab_hlist{background:#f8f9fb;display:flex;text-align:center;text-align: center;}
@@ -201,12 +203,9 @@ li.has_three .mbmenu_two:after{display:none;}
 .subdep3_vtitle_fxwrap.active{border-color:#404374;}
 .subdep3_vtitle_fxwrap.active .deptailcall_in:after{background-position:0 -8px}
 
-<<<<<<< Updated upstream
-=======
 .subdep3_vtitle_low{margin-top:47px;}
 .subdep3_vtitle_low .subdep3_vtitle{padding-bottom:0;}
 
->>>>>>> Stashed changes
 .subdep3_vobj_zone.dtype2 .subdep3_vtitle_fxwrap{border-bottom:0;}
 .subdep3_vobj_zone.dtype2 .subdep3_vtitle_inwrap{padding-bottom:0;}
 .subdep3_vobj_zone.dtype2 .subdep3_vtitle{padding-bottom:0;}
@@ -228,6 +227,8 @@ li.has_three .mbmenu_two:after{display:none;}
 .svdot_vlist > li.type2:before{background-color:#5baa32;}
 .svdot_vlist > li:before{display:block;content:'';width:3px;height:3px;border-radius: 100%; position:absolute;top:14px;left:0;background:#222222;}
 .svdot_vlist > li:last-of-type{}
+.svdot_vlist.dtype2 > li{font-weight:400;font-size:17px;color:#505050}
+.svdot_vlist.dtype2 > li:before{top:12px;background:#505050;}
 .subvtog_sigcopy{font-size:18px;font-weight:500;color:#222;letter-spacing: -1px;margin-bottom:5px;}
 .subdep3_vtoggle_inner .svdash_vlist{margin-top:12px;}
 .subdep3_vtoggle_inner > .important_text{margin-top:12px;font-weight:500;}
@@ -494,8 +495,8 @@ input.search_topinput::input-placeholder{color:#9c9c9c !important;font-family: '
     .subdep3_vtoggle_inner{padding:15px 20px;}
     .subdep3_vtoggle_item .important_text{font-size:14px;padding-left:17px;}
     .svdot_vlist{}
-    .svdot_vlist > li{font-size:15px;padding-left:7px;}
-    .svdot_vlist > li:before{top:10px;}
+    .svdot_vlist > li{font-size:15px !important;padding-left:7px;}
+    .svdot_vlist > li:before{top:10px !important;}
     .subvtog_sigcopy{font-size:15px;}
     .subdep3_vtoggle_inner .svdash_vlist{margin-top:10px;}
     .svdot_sym{color:#5baa32;}
