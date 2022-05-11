@@ -213,7 +213,8 @@ input[type="checkbox"].chkrd:checked{border-color:#b14487;background-color:#b144
 .norpop_incont.message_inbox{background:#f5f8fc;border-top:1px solid #ececec;border-bottom:1px solid #ececec;padding:25px 20px;}
 .norpop_incont.type2{margin-top:5px;}
 .npin_subcopy{font-size:17px;color:#505050;line-height:1.4;word-break: keep-all;}
-.npin_guidebox{border:3px solid #c0378c;text-align:center;border-radius:28px;margin-top:20px;padding:25px;background:#f4f5f9;}
+.npin_guidebox{border:3px solid #f4f5f9;text-align:center;border-radius:28px;margin-top:20px;padding:25px;background:#f4f5f9;display:block;}
+.npin_guidebox:hover{border-color:#c0378c;}
 .npin_guidebox_tit{font-size:20px;color:#222222;letter-spacing: -1px;font-family: 'GmarketSansMedium';line-height:1;margin-bottom:10px}
 .npin_guidebox_imgobj_w{max-width:119px;margin:0 auto;}
 .npin_guidebox_imgobj{padding-bottom:73.94957983193277%;background:url("../images/ico_monitor.png") no-repeat 0 0/100% auto;}
