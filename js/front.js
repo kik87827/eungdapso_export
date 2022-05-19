@@ -739,10 +739,7 @@ function dimLayerShow(option){
 		
 		$target = $(option.target);
 		$t_box = $target.find(".norpop_modal");
-		$t_td = $target.find(".dimlayer_td");
 		$t_box_cont = $target.find(".layer_cont");
-		$t_tpt = parseInt($t_td.css("padding-top"));
-		$t_tpb = parseInt($t_td.css("padding-bottom"));
 		$page_wrap = $(".page_wrap");
 		
 		
@@ -750,13 +747,7 @@ function dimLayerShow(option){
 		$modal.removeClass("active");
 		$target.addClass("active");
 		
-		var boxzoneHeight = $t_box.outerHeight()+$t_tpt+$t_tpb; 
-		var varheight = 0;
-		if(boxzoneHeight > $(window).height()){
-			varheight = boxzoneHeight;
-		}else{
-			varheight = $(window).height();
-		}
+		var boxzoneHeight = $t_box.outerHeight(); 
 		$t_box.css({"top" : 0});
 
 		
@@ -765,6 +756,8 @@ function dimLayerShow(option){
 		heightcheck();
 
 		// fullContHeight();
+
+		normalCont();
 		
 		if ($target.hasClass("fulltype")) {
 			$fullpop_titlow = $target.find(".fullpop_titlow");
@@ -808,18 +801,28 @@ function dimLayerShow(option){
 				}
 				$("html").addClass("touchDis");
 			}else{
-				if(boxzoneHeight > $(window).height()){
-					$("html").addClass("touchDis2");
-				}
+				normalCont();
 			}
 		}
 		var $windowWid = 0;
 		$(window).on("resize", function () {
-			if ($windowWid == $(window).width()) {
+			if ($windowWid == $(window).width() && touchIs) {
 				return;
 			}
+			normalCont();
 			$windowWid = $(window).width();
 		});
+
+
+		function normalCont(){
+			boxzoneHeight = $t_box.outerHeight();
+			if(boxzoneHeight > $(window).height()){
+				$("html").addClass("touchDis2");
+				$target.addClass("atype2");
+			}else{
+				$target.removeClass("atype2");
+			}
+		}
 	});
 };
 /* layer popup hide */
@@ -947,4 +950,51 @@ function accodianFunc(){
 		}
 		$t_p.toggleClass("active");
 	});
+}
+
+function tableScrollCall(option){
+	var window_wid = 0;
+	$(function(){
+		action();
+		$(window).on("resize",function(){
+			if(window_wid == $(window).width()){
+				return;
+			}
+			action();
+			window_wid = $(window).width();
+		});
+	});
+
+	function action(){
+		var target = $(option.target);
+		var fake_tbody_scroll_zone = target.find(".fake_tbody_scroll_zone");
+		var fake_thead_fxwrap = target.find(".fake_thead_fxwrap");
+		var fake_tbody_tr = fake_tbody_scroll_zone.find(".fake_td_tr");
+		// var fake_tbody_tr_get = fake_tbody_tr.eq(heightVaule+1).position().top;
+		var heightVaule = 0;
+		var fakte_tbody_pos = "100%";
+		var fake_tbody_scroll_zone_wid = fake_tbody_scroll_zone.outerWidth() || 0;
+		var fake_tbody_tr_wid = fake_tbody_tr.outerWidth() || 0;
+		var getScrollBar = fake_tbody_scroll_zone_wid - fake_tbody_tr_wid;
+		fake_thead_fxwrap.css({
+			"padding-right" : getScrollBar
+		});
+		fake_tbody_scroll_zone.css({
+			"max-height" : ""
+		});
+		if($(window).width()<1024){
+			heightVaule = Number(option.rowpos)-3;
+		}else{
+			heightVaule = Number(option.rowpos);
+		}
+		setTimeout(function(){
+			fakte_tbody_pos = fake_tbody_tr.eq(heightVaule).length ? fake_tbody_tr.eq(heightVaule).position().top : "100%";
+			fake_tbody_scroll_zone.css({
+				"max-height" : fakte_tbody_pos
+			});
+		},30);
+		// fake_tbody_scroll_zone.css({
+		// 	"height" : fake_tbody_tr_get
+		// });
+	}
 }
