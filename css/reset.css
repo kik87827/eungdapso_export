@@ -6,6 +6,7 @@
 body {font-family: 'Noto Sans KR',Dotum,verdana,sans-serif;font-size:12px;}
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, address, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, textarea, table, caption, tbody, tfoot, thead, tr, th, td, header, footer, nav, menu, section, article, aside, main, video {margin:0;padding:0;border:0;vertical-align:baseline;}
 header, footer, section, article, aside, nav, main, details, menu, figure, figcaption, video {display:block;}
+html{}
 table {border-collapse:collapse;border-spacing:0;word-wrap:break-word;word-break:break-all;}
 table th, table td {text-align:center;vertical-align:middle;font-weight:normal;font-family: 'Noto Sans KR';}
 ol, ul, li {list-style: none outside none;}
