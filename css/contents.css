@@ -418,6 +418,8 @@ input[type="checkbox"].chkrd:checked{border-color:#b14487;background-color:#b144
 .sf_intab:last-of-type.active:before{
     right:100%;
 }
+.focus_mode .sf_intab:focus:after,
+.focus_mode .sf_intab:focus:before{display:none;}
 .sf_inboxcont_wrap{background:#fff;border:1px solid #4264c2;z-index:2;position:relative;
     -webkit-box-shadow: 0 0 10px 5px rgba(66,100,194,0.3);
     box-shadow: 0 0 10px 5px rgba(66,100,194,0.3);
