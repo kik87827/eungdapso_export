@@ -287,20 +287,40 @@ function commonInit(){
 		$("html").addClass("samsung");
 	}
 
+	var enterKeyPress = false;
 	$(window).on("keydown",function(e){
         var keycode = e.keyCode || e.which;
-        $("body").addClass("focus_mode");
+        
         if(keycode == 13){
-            focusTab = true;
+            $("body").addClass("focus_mode");
+			enterKeyPress = true;
         }else{
-            focusTab = false;
+			$("body").addClass("focus_mode");
+			enterKeyPress = false;
         }
+    });
+	
+	$(window).on("click",function(e){
+		if(!enterKeyPress){
+			$("body").removeClass("focus_mode");
+		}
     });
 
 
 	var $midcontents = $(".mid_contents");
 	if($midcontents.length){
-		$midcontents.next("div,footer,section").find(focusGlobalItem).first().addClass("ctout_item");
+		// if($midcontents.next()[0].nodeName == "SCRIPT"){
+		// 	console.log($midcontents.next().next("div,footer,section"));
+		// 	$midcontents.next().next("div,footer,section").find(focusGlobalItem).first().addClass("ctout_item");
+		// }else{
+		// 	$midcontents.next("div,footer,section").find(focusGlobalItem).first().addClass("ctout_item");
+		// }
+		if($midcontents.next()[0].nodeName == "SCRIPT" || $midcontents.next()[0].nodeName == "footer" || $midcontents.next()[0].nodeName == "section"){
+			$midcontents.next().next("div,footer,section").find(focusGlobalItem).first().addClass("ctout_item");
+		}else{
+			$midcontents.next().find(focusGlobalItem).first().addClass("ctout_item");
+		}
+		console.log($midcontents.next()[0].nodeName);
 	}
 
 	/* 스킵메뉴 접근성 이동 스크립트 */
