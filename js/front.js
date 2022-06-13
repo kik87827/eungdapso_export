@@ -319,8 +319,7 @@ function commonInit(){
 		// }else{
 		// 	$midcontents.next().find(focusGlobalItem).first().addClass("ctout_item");
 		// }
-		$midcontents.nextAll("div,footer,section").find(focusGlobalItem).first().addClass("ctout_item");
-		console.log($midcontents.next()[0].nodeName);
+		$midcontents.nextAll("div,footer,section").first().find(focusGlobalItem).first().addClass("ctout_item");
 	}
 
 	/* 스킵메뉴 접근성 이동 스크립트 */
