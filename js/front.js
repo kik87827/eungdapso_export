@@ -315,11 +315,11 @@ function commonInit(){
 		// }else{
 		// 	$midcontents.next("div,footer,section").find(focusGlobalItem).first().addClass("ctout_item");
 		// }
-		if($midcontents.next()[0].nodeName == "SCRIPT" || $midcontents.next()[0].nodeName == "footer" || $midcontents.next()[0].nodeName == "section"){
-			$midcontents.next().next("div,footer,section").find(focusGlobalItem).first().addClass("ctout_item");
-		}else{
-			$midcontents.next().find(focusGlobalItem).first().addClass("ctout_item");
-		}
+		// if($midcontents.next()[0].nodeName == "SCRIPT"){
+		// }else{
+		// 	$midcontents.next().find(focusGlobalItem).first().addClass("ctout_item");
+		// }
+		$midcontents.nextAll("div,footer,section").find(focusGlobalItem).first().addClass("ctout_item");
 		console.log($midcontents.next()[0].nodeName);
 	}
 
