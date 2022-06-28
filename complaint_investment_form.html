@@ -89,6 +89,7 @@
 												<li id="mbgnb01_10"><a href="#" class="mbmenu_two">노동조사신고</a></li>
 												<li id="mbgnb01_11"><a href="#" class="mbmenu_two">지방세 이의신청</a></li>
 												<li id="mbgnb01_12"><a href="#" class="mbmenu_two">성평등 노동조사신고</a></li>
+												<li id="mbgnb01_14"><a href="#" class="mbmenu_two">적극행정 국민신청 제도</a></li>
 												<li id="mbgnb01_13"><a href="#" class="mbmenu_two define_blank" title="새창" target="_blank">공직비리 익명신고</a></li>
 											</ul>
 										</div>
@@ -172,6 +173,7 @@
 												<li><a href="#" class="htm">노동조사신고</a></li>
 												<li><a href="#" class="htm">지방세 이의신청</a></li>
 												<li><a href="#" class="htm">성평등 노동조사신고</a></li>
+												<li><a href="#" class="htm">적극행정 국민신청 제도</a></li>
 												<li><a href="#" class="htm">공직비리 익명신고</a></li>
 											</ul>
 										</div>
@@ -313,6 +315,7 @@
 											<li><a href="#" class="map_depth">노동조사신고</a></li>
 											<li><a href="#" class="map_depth">지방세 이의신청</a></li>
 											<li><a href="#" class="map_depth">성평등 노동조사신고</a></li>
+											<li><a href="#" class="map_depth">적극행정 국민신청 제도</a></li>
 											<li><a href="#" class="map_depth define_blank" title="새창" target="_blank">공직비리 익명신고</a></li>
 										</ul>
 									</div>
@@ -1197,18 +1200,14 @@
 						// 220516 수정임시저장 불러오기
 						$("#btn_call_temporary_storage").on("click", function(e) {
 							dimLayerShow({
-								target: "#temporary_storage_popup"
+								target: "#temporary_storage_popup",
+								openCallback: function() {
+									tableScrollCall({
+										target: "#temporary_table",
+										rowpos: 5
+									});
+								}
 							});
-						});
-						dimLayerShow({
-							target: "#temporary_storage_popup",
-							openCallback: function() {
-								tableScrollCall({
-									target: "#temporary_table",
-									rowpos: 5
-								});
-								console.log(1)
-							}
 						});
 						// toggle
 						subContentsTogglefunc({

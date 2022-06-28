@@ -89,6 +89,7 @@
 												<li id="mbgnb01_10"><a href="#" class="mbmenu_two">노동조사신고</a></li>
 												<li id="mbgnb01_11"><a href="#" class="mbmenu_two">지방세 이의신청</a></li>
 												<li id="mbgnb01_12"><a href="#" class="mbmenu_two">성평등 노동조사신고</a></li>
+												<li id="mbgnb01_14"><a href="#" class="mbmenu_two">적극행정 국민신청 제도</a></li>
 												<li id="mbgnb01_13"><a href="#" class="mbmenu_two define_blank" title="새창" target="_blank">공직비리 익명신고</a></li>
 											</ul>
 										</div>
@@ -172,6 +173,7 @@
 												<li><a href="#" class="htm">노동조사신고</a></li>
 												<li><a href="#" class="htm">지방세 이의신청</a></li>
 												<li><a href="#" class="htm">성평등 노동조사신고</a></li>
+												<li><a href="#" class="htm">적극행정 국민신청 제도</a></li>
 												<li><a href="#" class="htm">공직비리 익명신고</a></li>
 											</ul>
 										</div>
@@ -319,7 +321,8 @@
 					<h2 class="subcont_tit">응답소 민원결과<br class="mb_br">(안보이는 민원조회)</h2>
 				</div>
 				<div class="subcont_contwrap">
-					<div class="sortfield_box reslabel_parent mtype2">
+					<!-- 7차 전달 마크업변경 220615 -->
+					<!-- <div class="sortfield_box reslabel_parent mtype2">
 						<div class="sf_low define_ment">
 							<p class="sf_ment">문자인증 통해 등록된 민원 진행상황을 조회 할 수 있습니다.</p>
 						</div>
@@ -383,7 +386,117 @@
 								</div>
 							</div>
 						</fieldset>
+					</div> -->
+					<div class="sortfield_box reslabel_parent mtype2">
+						<div class="sf_low define_ment">
+							<p class="sf_ment">문자인증 통해 등록된 민원 진행상황을 조회 할 수 있습니다.</p>
+						</div>
+						<fieldset class="sf_low has_fxlayout dtype2">
+							<legend>검색</legend>
+							<div class="searchform_fxlayout_wrap">
+								<div class="sfx_fitem">
+									<div class="sfres_form">
+										<div class="sfres_labelcell"><span class="sfres_label reslabel">이름</span></div>
+										<div class="sfres_fieldcell">
+											<span class="sfres_vdata">김응답</span>
+										</div>
+									</div>
+								</div>
+								<div class="sfx_fitem sfx_pix">
+									<div class="sfres_form">
+										<div class="sfres_labelcell"><label for="sfres02" class="sfres_label">신청기간</label></div>
+										<div class="sfres_fieldcell">
+											<div class="inform_fxinner">
+												<div class="infxinner_form"><input type="text" class="form_input define_calendar" id="sfres02" title="시작일 날짜 선택" placeholder="2022-01-01"></div>
+												<div class="infxinner_else"><span class="infx_wpsp">~</span></div>
+												<div class="infxinner_form"><input type="text" class="form_input define_calendar" title="종료일 날짜 선택" placeholder="2022-01-01"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="searchform_fxlayout_wrap ftype2 dtype2">
+								<div class="sfres_form">
+									<div class="sfres_labelcell"><span class="sfres_label reslabel">조건검색 <span class="vfc_emp">*</span></span></div>
+									<div class="sfres_fieldcell">
+										<div class="field_infxwrap">
+											<div class="field_infxshort">
+												<ul class="chkrd_flist ftype2">
+													<li>
+														<div class="chkrd_item">
+															<input type="radio" class="chkrd" name="method_choice" id="method_choice_cellphone" checked>
+															<label for="method_choice_cellphone" class="chkrd_label">휴대폰</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item">
+															<input type="radio" class="chkrd" name="method_choice" id="method_choice_email">
+															<label for="method_choice_email" class="chkrd_label">이메일</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item">
+															<input type="radio" class="chkrd" name="method_choice" id="method_choice_receipt">
+															<label for="method_choice_receipt" class="chkrd_label">접수번호</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="field_infxlong">
+												<!-- 휴대폰 -->
+												<div class="field_tabcont" id="cellphone_field" style="display:block;">
+													<div class="field_input_w">
+														<label for="cellphone_form_item" class="hdtext">휴대폰 입력</label>
+														<input type="text" class="form_input" id="cellphone_form_item" title="휴대폰번호 입력" placeholder="‘-’ 포함 작성">
+													</div>
+												</div>
+												<!-- // 휴대폰 -->
+												<!-- 이메일 -->
+												<div class="field_tabcont" id="email_field">
+													<div class="field_input_w">
+														<label for="email_form_item" class="hdtext">이메일 입력</label>
+														<input type="text" class="form_input" id="email_form_item" title="이메일 입력" placeholder="‘@’ 포함 작성">
+													</div>
+												</div>
+												<!-- // 이메일 -->
+												<!-- 접수번호 -->
+												<div class="field_tabcont" id="receipt_field">
+													<div class="search_item_obj">
+														<label for="search_item" class="hdtext">접수번호 입력</label>
+														<input type="text" id="search_item" class="sfinput" title="접수번호 입력" placeholder="접수번호를 입력해주세요.">
+														<a href="javascript:;" class="btn_sfsubmit" title="검색"><span class="hdtext">검색</span></a>
+													</div>
+												</div>
+												<!-- // 접수번호 -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="searchform_fxlayout_wrap ftype2" id="search_form_wrap">
+								<div class="sfres_form">
+									<div class="sfres_labelcell"><label for="sfres03" class="sfres_label reslabel">검색어</label></div>
+									<div class="sfres_fieldcell">
+										<div class="searchform_fxwrap pixtype2">
+											<div class="sfhitem define_select">
+												<select class="form_select ready_select" title="민원결과 검색 키워드 선택" id="sfres03">
+													<option value="0">선택하세요</option>
+													<option value="1">제목</option>
+													<option value="2">답변내용</option>
+												</select>
+											</div>
+											<div class="sfhitem define_form">
+												<label for="search_item" class="hdtext">검색어 입력</label>
+												<input type="text" id="search_item" class="sfinput" title="검색어 입력" placeholder="검색어를 입력해주세요.">
+												<a href="javascript:;" class="btn_sfsubmit" title="검색"><span class="hdtext">검색</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</fieldset>
 					</div>
+					<!-- // 7차 전달 마크업변경 220615 -->
 					<div class="respon_lkcont fxtype2 mb10">
 						<div class="rp_lkment">
 							<div class="rp_lkitem">전체 <span class="rplk_count">50건</span></div>
@@ -597,7 +710,8 @@
 					</div>
 					<!-- // 검색결과 없음 -->
 					<!-- 민원 처리과정 만족도 조사 안내 팝업 -->
-					<div class="dimlayer_z" id="qustion_guide_pop" data-closefocus="#btn_qustion_call">
+					<!-- 220615  data-closefocus=".btn_qustion_call" 변경  -->
+					<div class="dimlayer_z" id="qustion_guide_pop" data-closefocus=".btn_qustion_call">
 						<div class="pop_dim"></div>
 						<div class="norpop_item">
 							<div class="norpop_modal" tabindex="0">
@@ -838,6 +952,21 @@
 				</div>
 				<script>
 					$(function() {
+						// 검색영역 조건검색
+						$("[name='method_choice']").on("click", function() {
+							var $t = $(this);
+							if ($t.prop("checked")) {
+								$(".field_tabcont").hide();
+								if ($t.attr("id") == "method_choice_cellphone") {
+									$("#cellphone_field , #search_form_wrap").show();
+								} else if ($t.attr("id") == "method_choice_email") {
+									$("#email_field , #search_form_wrap").show();
+								} else if ($t.attr("id") == "method_choice_receipt") {
+									$("#search_form_wrap").hide();
+									$("#receipt_field").show();
+								}
+							}
+						});
 						// 민원 처리과정 만족도 조사 안내 ? 클릭
 						$(".btn_qustion_call").on("click", function(e) {
 							dimLayerShow({

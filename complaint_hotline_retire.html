@@ -89,6 +89,7 @@
 												<li id="mbgnb01_10"><a href="#" class="mbmenu_two">노동조사신고</a></li>
 												<li id="mbgnb01_11"><a href="#" class="mbmenu_two">지방세 이의신청</a></li>
 												<li id="mbgnb01_12"><a href="#" class="mbmenu_two">성평등 노동조사신고</a></li>
+												<li id="mbgnb01_14"><a href="#" class="mbmenu_two">적극행정 국민신청 제도</a></li>
 												<li id="mbgnb01_13"><a href="#" class="mbmenu_two define_blank" title="새창" target="_blank">공직비리 익명신고</a></li>
 											</ul>
 										</div>
@@ -172,6 +173,7 @@
 												<li><a href="#" class="htm">노동조사신고</a></li>
 												<li><a href="#" class="htm">지방세 이의신청</a></li>
 												<li><a href="#" class="htm">성평등 노동조사신고</a></li>
+												<li><a href="#" class="htm">적극행정 국민신청 제도</a></li>
 												<li><a href="#" class="htm">공직비리 익명신고</a></li>
 											</ul>
 										</div>
@@ -311,6 +313,7 @@
 											<li><a href="#" class="map_depth">노동조사신고</a></li>
 											<li><a href="#" class="map_depth">지방세 이의신청</a></li>
 											<li><a href="#" class="map_depth">성평등 노동조사신고</a></li>
+											<li><a href="#" class="map_depth">적극행정 국민신청 제도</a></li>
 											<li><a href="#" class="map_depth define_blank" title="새창" target="_blank">공직비리 익명신고</a></li>
 										</ul>
 									</div>
@@ -364,7 +367,7 @@
 									<li>전화상담 및 문의 : <strong>서울특별시 조사담당관 (02)2133-4800</strong></li>
 								</ul>
 								<div class="btn_sctobj_w ftype2">
-									<div class="btn_sctobj_cell"><a href="javascript:;" id="btn_lawyer_call" class="btn_smobjbox">공익제보 <br class="mb_br">안심변호사 안내<br class="mb_br">(상담 및 대리신고)</a></div>
+									<div class="btn_sctobj_cell"><a href="javascript:;" id="btn_lawyer_call_01" class="btn_smobjbox">공익제보 <br class="mb_br">안심변호사 안내<br class="mb_br">(상담 및 대리신고)</a></div>
 									<div class="btn_sctobj_cell"><a href="#" class="btn_sctobj">민원 신청하기</a></div>
 								</div>
 							</div>
@@ -387,9 +390,9 @@
 								</a>
 								<div class="toggle_vcont">
 									<ul class="bullet_list">
-										<li><a href="#" class="normal_link" title="공직자윤리법 새창열기">공직자윤리법</a></li>
-										<li><a href="#" class="normal_link" title="공직자윤리법 시행령 새창열기">공직자윤리법 시행령</a></li>
-										<li><a href="#" class="normal_link" title="서울특별시 부조리 신고 및 보상금 지급에 관한 조례 새창열기">서울특별시 부조리 신고 및 보상금 지급에 관한 조례</a></li>
+										<li>공직자윤리법</li>
+										<li>공직자윤리법 시행령</li>
+										<li>서울특별시 부조리 신고 및 보상금 지급에 관한 조례</li>
 									</ul>
 								</div>
 							</div>
@@ -815,6 +818,15 @@
 				<script>
 					mobileMenuRock("#mbgnb01_05");
 					$(function() {
+						// 안심변호사 layer 호출
+						$("#btn_lawyer_call_01").on("click", function() {
+							dimLayerShow({
+								"target": "#lawyer_guide_pop"
+							}); // show
+							// dimLayerHide({"target" : "#lawyer_guide_pop"}); // hide
+
+							$("#lawyer_guide_pop").attr("data-closefocus", "#btn_lawyer_call_01");
+						});
 						// 안심변호사 layer 호출
 						$("#btn_lawyer_call_02").on("click", function() {
 							dimLayerShow({

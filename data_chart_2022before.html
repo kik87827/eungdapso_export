@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="천만 서울시민의 의견을 접수받는 온라인 민원신청 창구입니다. 민원신청 종류는 생활불편, 건의, 질의 민원과 더불어 인권침해, 민생침해 등 다양한 시민의 소리를 접수하고 처리합니다.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="./images/logo_icon_114.png">
+	<link rel="apple-touch-icon" href="./images/logo_icon_114.png">
+	<link href="./css/reset.css" rel="stylesheet">
+	<link href="./css/layout.css" rel="stylesheet">
+	<link href="./css/swiper.min.css" rel="stylesheet">
+	<link href="./css/jqueryui.css" rel="stylesheet">
+	<link href="./css/contents.css" rel="stylesheet">
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery.cookie.js"></script>
+	<script src="./js/hoverIntent.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/iscroll.js"></script>
+	<script src="./js/front.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<title>2022년 이전 연별 | 응답소 민원 통계 | 정보 | 응답소</title>
+</head>
+
+<body class="front_body">
+	<!-- skip menu -->
+	<ul class="skiplist">
+		<li class="skip pc_skip"><a href="#gnb">주메뉴 바로가기</a></li>
+		<li class="skip mb_skip"><a href="#mobile_gnb">주메뉴 바로가기</a></li>
+		<li class="skip"><a href="#content">본문내용으로 바로가기</a></li>
+	</ul>
+	<!-- //skip menu -->
+	<div class="page_wrap">
+		<!-- header_wrap  -->
+		<header class="header_wrap">
+			<!-- 서울시 연동 -->
+			<div class="head_linkage_zone">
+				<!-- 연동영역 더미코딩 -->
+				<div style="background:#1085e5;height:48px;display:flex;align-items:center;justify-content: center;color:#fff;font-size:16px;line-height:1;" id="temp_header">서울시 연동영역</div>
+				<style>
+					@media (max-width:1023px) {
+						#temp_header {
+							height: 30px !important;
+							font-size: 14px !important;
+						}
+					}
+				</style>
+				<!-- // 연동영역 더미코딩 -->
+			</div>
+			<!-- // 서울시 연동 -->
+			<div class="head_group">
+				<!-- mobile -->
+				<a href="#" class="btn_mbmenucall"><span class="btn_mbmenucall_in"></span><span class="hdtext">메인메뉴 열기</span></a>
+				<div class="mobile_mainmenu_zone">
+					<div class="mainmenu_dim"></div>
+					<div class="mobile_mainmenu_wrap" id="mobile_gnb">
+						<div class="mbutil_low">
+							<span class="mbmenu_logo"><span class="hdtext">응답소</span></span>
+							<div class="mbutil_hlist_w">
+								<ul class="mbutil_hlist">
+
+
+									<!-- 로그인 전 -->
+									<li><a href="#" class="mbutil">회원가입</a></li>
+									<li><a href="#" class="mbutil">로그인</a></li>
+									<!-- // 로그인 전 -->
+
+								</ul>
+							</div>
+						</div>
+						<div class="mbmenu_low">
+							<div class="mbmenu_isc">
+								<ul class="mbmenu_vlist">
+									<li id="mb_gnb01">
+										<a href="#" class="mbmenu_one">민원신청</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb01_01"><a href="#" class="mbmenu_two">시정일반 질의ㆍ건의</a></li>
+												<li id="mbgnb01_02"><a href="#" class="mbmenu_two">코로나19 방역수칙 위반 신고센터</a></li>
+												<li id="mbgnb01_03"><a href="#" class="mbmenu_two">코로나19 백신접종 신고</a></li>
+												<li id="mbgnb01_04"><a href="#" class="mbmenu_two">시장에게 바란다</a></li>
+												<li id="mbgnb01_05"><a href="#" class="mbmenu_two">시장 핫라인(공익제보)</a></li>
+												<li id="mbgnb01_06"><a href="#" class="mbmenu_two">투자출연기관 비리신고</a></li>
+												<li id="mbgnb01_07"><a href="#" class="mbmenu_two">하도급 부조리 신고</a></li>
+												<li id="mbgnb01_08"><a href="#" class="mbmenu_two">인권침해 구제신청</a></li>
+												<li id="mbgnb01_09"><a href="#" class="mbmenu_two">민생침해신고(눈물그만)</a></li>
+												<li id="mbgnb01_10"><a href="#" class="mbmenu_two">노동조사신고</a></li>
+												<li id="mbgnb01_11"><a href="#" class="mbmenu_two">지방세 이의신청</a></li>
+												<li id="mbgnb01_12"><a href="#" class="mbmenu_two">성평등 노동조사신고</a></li>
+												<li id="mbgnb01_14"><a href="#" class="mbmenu_two">적극행정 국민신청 제도</a></li>
+												<li id="mbgnb01_13"><a href="#" class="mbmenu_two define_blank" title="새창" target="_blank">공직비리 익명신고</a></li>
+											</ul>
+										</div>
+									</li>
+									<li id="mb_gnb02">
+										<a href="#" class="mbmenu_one">민원결과</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb02_01"><a href="#" class="mbmenu_two">응답소 민원결과</a></li>
+												<li id="mbgnb02_02"><a href="#" class="mbmenu_two">120 민원결과</a></li>
+												<li id="mbgnb02_03"><a href="#" class="mbmenu_two">SNS 민원결과</a></li>
+												<li id="mbgnb02_04"><a href="#" class="mbmenu_two">방문ㆍ서신ㆍ유선 민원결과</a></li>
+												<li id="mbgnb02_05"><a href="#" class="mbmenu_two">국민신문고 민원결과</a></li>
+												<li id="mbgnb02_06"><a href="#" class="mbmenu_two">방문 신청한 서식민원 조회</a></li>
+											</ul>
+										</div>
+									</li>
+									<li id="mb_gnb03">
+										<a href="#" class="mbmenu_one">민원사례</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb03_01"><a href="#" class="mbmenu_two">자주 찾는 민원사례</a></li>
+												<li id="mbgnb03_02"><a href="#" class="mbmenu_two">민원 공개사례</a></li>
+												<li id="mbgnb03_03"><a href="#" class="mbmenu_two">민원서비스 우수사례</a></li>
+											</ul>
+										</div>
+									</li>
+									<li id="mb_gnb04">
+										<a href="#" class="mbmenu_one">정보</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb04_01"><a href="#" class="mbmenu_two">민원편람</a></li>
+												<li id="mbgnb04_02"><a href="#" class="mbmenu_two">무인민원발급기 위치</a></li>
+												<li id="mbgnb04_03"><a href="#" class="mbmenu_two">위원회 협의 내용 조회</a></li>
+												<li id="mbgnb04_04"><a href="#" class="mbmenu_two">행정서비스 헌장</a></li>
+												<li id="mbgnb04_05"><a href="#" class="mbmenu_two">응답소 민원 통계</a></li>
+											</ul>
+										</div>
+									</li>
+									<li id="mb_gnb05">
+										<a href="#" class="mbmenu_one">고객소통센터</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb05_01"><a href="#" class="mbmenu_two">공지사항</a></li>
+												<li id="mbgnb05_02"><a href="#" class="mbmenu_two">SNS 긴급메시지</a></li>
+												<li id="mbgnb05_03"><a href="#" class="mbmenu_two">자주 묻는 질문</a></li>
+												<li id="mbgnb05_04"><a href="#" class="mbmenu_two">찾아가는 서울시청</a></li>
+												<li id="mbgnb05_05"><a href="#" class="mbmenu_two">민원안내관</a></li>
+												<li id="mbgnb05_06"><a href="#" class="mbmenu_two">응답소란</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="btn_mbmenuclose"><span class="hdtext">메인메뉴 닫기</span></a>
+					</div>
+				</div>
+				<!-- // mobile -->
+				<div class="pix_in">
+					<div class="header_both">
+						<div class="header_cell head_left">
+							<h1 class="header_toplogo"><a href="#" class="toplogo_link"><span class="hdtext">응답소</span></a></h1>
+						</div>
+						<div class="header_cell head_right">
+							<div class="headgnb_list_wrap" id="gnb">
+								<ul class="headgnb_list">
+									<li>
+										<a href="#" class="hgm">민원신청</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">시정일반 질의ㆍ건의</a></li>
+												<li><a href="#" class="htm">코로나19 방역수칙 위반 신고센터</a></li>
+												<li><a href="#" class="htm">코로나19 백신접종 신고</a></li>
+												<li><a href="#" class="htm">시장에게 바란다</a></li>
+												<li><a href="#" class="htm">시장 핫라인(공익제보)</a></li>
+												<li><a href="#" class="htm">투자출연기관 비리신고</a></li>
+												<li><a href="#" class="htm">하도급 부조리 신고</a></li>
+												<li><a href="#" class="htm">인권침해 구제신청</a></li>
+												<li><a href="#" class="htm">민생침해신고(눈물그만)</a></li>
+												<li><a href="#" class="htm">노동조사신고</a></li>
+												<li><a href="#" class="htm">지방세 이의신청</a></li>
+												<li><a href="#" class="htm">성평등 노동조사신고</a></li>
+												<li><a href="#" class="htm">적극행정 국민신청 제도</a></li>
+												<li><a href="#" class="htm">공직비리 익명신고</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="hgm">민원결과</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">응답소 민원결과</a></li>
+												<li><a href="#" class="htm">120 민원결과</a></li>
+												<li><a href="#" class="htm">SNS 민원결과</a></li>
+												<li><a href="#" class="htm">방문ㆍ서신ㆍ유선 민원결과</a></li>
+												<li><a href="#" class="htm">국민신문고 민원결과</a></li>
+												<li><a href="#" class="htm">방문 신청한 서식민원 조회</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="hgm">민원사례</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">자주 찾는 민원사례</a></li>
+												<li><a href="#" class="htm">민원 공개사례</a></li>
+												<li><a href="#" class="htm">민원서비스 우수사례</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="hgm">정보</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">민원편람</a></li>
+												<li><a href="#" class="htm">무인민원발급기 위치</a></li>
+												<li><a href="#" class="htm">위원회 협의 내용 조회</a></li>
+												<li><a href="#" class="htm">행정서비스 헌장</a></li>
+												<li><a href="#" class="htm">응답소 민원 통계</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="hgm">고객소통센터</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">공지사항</a></li>
+												<li><a href="#" class="htm">SNS 긴급메시지</a></li>
+												<li><a href="#" class="htm">자주 묻는 질문</a></li>
+												<li><a href="#" class="htm">찾아가는 서울시청</a></li>
+												<li><a href="#" class="htm">민원안내관</a></li>
+												<li><a href="#" class="htm">응답소란</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="headelse_list_wrap">
+								<div class="headelse_list_in">
+									<ul class="util_list">
+
+
+										<!-- 로그인 전 -->
+										<li><a href="#" class="util hasico ico_01"><span class="util_ein">로그인</span></a></li>
+										<li><a href="#" class="util"><span class="util_ein">회원가입</span></a></li>
+										<!-- // 로그인 전 -->
+
+
+									</ul>
+								</div>
+								<!-- [2차전달] 220419 HTML 변경 -->
+								<div class="headgnb_search_w">
+									<a href="javascript:;" class="btn_headsearch" data-closeText="검색창 닫기">
+										<span class="hdtext opencase">검색</span>
+									</a>
+								</div>
+								<!-- // [2차전달] 220419 HTML 변경 -->
+							</div>
+						</div>
+					</div>
+					<div class="gnb_depbg"></div>
+				</div>
+			</div>
+			<!-- 검색 레이어 -->
+			<div class="search_toplayer">
+				<div class="search_topfield_w">
+					<div class="search_topfield">
+						<label for="search_topitem" class="hdtext">검색어 입력</label>
+						<input type="text" id="search_topitem" class="search_topinput" title="검색어 입력" placeholder="검색어를 입력해주세요.">
+						<a href="javascript:;" class="btn_topsearch_submit" title="검색"><span class="hdtext">검색</span></a>
+					</div>
+					<div class="search_keyword_low">
+						<div class="top_keyword_label_w"><span class="top_keyword_label">이슈검색어</span></div>
+						<ul class="top_keyword_flist">
+							<li><a href="javascript:;" class="top_keyword">#이관민원 조회</a></li>
+							<li><a href="javascript:;" class="top_keyword">#백신접종장소</a></li>
+							<li><a href="javascript:;" class="top_keyword">#코로나19 QnA</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- // 검색 레이어 -->
+		</header>
+		<!-- // header_wrap -->
+		<section class="mid_contents">
+			<!-- submap -->
+			<div class="submap_zone_parent">
+				<div class="submap_zone">
+					<div class="sub_map_pixin">
+						<a href="/" class="sub_map_home"><span class="hdtext">홈</span></a>
+						<div class="sub_map_fxwrap">
+							<div class="sub_map_fxitem">
+								<div class="sub_map_toggle_wrap">
+									<a href="javascript:;" class="map_toggle_current">정보</a>
+									<div class="map_depth_vlist_wrap">
+										<ul class="map_depth_vlist">
+											<li><a href="#" class="map_depth">민원신청</a></li>
+											<li><a href="#" class="map_depth">민원결과</a></li>
+											<li><a href="#" class="map_depth">민원사례</a></li>
+											<li class="active"><a href="#" class="map_depth">정보</a></li>
+											<li><a href="#" class="map_depth">고객소통센터</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="sub_map_fxitem">
+								<div class="sub_map_toggle_wrap">
+									<a href="javascript:;" class="map_toggle_current">응답소 민원 통계</a>
+									<div class="map_depth_vlist_wrap">
+										<ul class="map_depth_vlist">
+											<li><a href="#" class="map_depth">민원편람</a></li>
+											<li><a href="#" class="map_depth">무인민원발급기 위치</a></li>
+											<li><a href="#" class="map_depth">위원회 협의 내용 조회</a></li>
+											<li><a href="#" class="map_depth">행정서비스 헌장</a></li>
+											<li class="active"><a href="#" class="map_depth">응답소 민원 통계</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // submap -->
+			<div class="subcont_zone" id="content">
+				<div class="subcont_gtitlow">
+					<h2 class="subcont_gtit">응답소 민원 통계</h2>
+				</div>
+				<div class="subcont_gcontlow">
+					<div class="subcont_wrap mtype4">
+						<div class="intro_count_box dtype2">
+							<div class="intro_count_main">
+								<div class="intro_count_define_label"><span class="count_label">민원접수건수</span></div>
+								<div class="intro_count_define_data">
+									<ul class="intro_count_list">
+										<li>
+											<div class="intro_count_item">
+												<span class="count_text_else">오늘</span>
+												<span class="count_text_num">812</span>
+												<span class="count_text_unit">건</span>
+											</div>
+										</li>
+										<li>
+											<div class="intro_count_item">
+												<span class="count_text_else">전일</span>
+												<span class="count_text_num">4,216</span>
+												<span class="count_text_unit">건</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="intro_count_else">
+								<p class="count_else_para">2022.05.22 현재</p>
+							</div>
+						</div>
+						<div class="scdep_tab_hlist_w mtype2 resm_type2">
+							<ul class="scdep_tab_hlist divtype2">
+								<li><a href="javascript:;" class="scdep_tab">민원현황 추이</a></li>
+								<li class="active"><a href="javascript:;" class="scdep_tab">2022년 이전 연별</a></li>
+							</ul>
+							<div class="scdep_tabelse_w"><span class="scdep_tabelse">기간 내 민원 건 수 : 157,773건</span></div>
+						</div>
+
+						<div class="scdep_cont_w">
+							<h4 class="hdtext">2022년 이전 연별</h4>
+							<div class="chart_data_item_list">
+								<!-- chart_data_item -->
+								<div class="chart_data_item">
+									<div class="define_chart_wrap">
+										<div class="chart_data_title_row">
+											<div class="chart_data_main_cell">
+												<div class="chart_data_title_group">
+													<p class="chart_data_title">민원 접수 현황</p>
+													<p class="chart_data_sub">단위 : 건</p>
+												</div>
+											</div>
+										</div>
+										<div class="chart_data_content_row">
+											<div class="chart_data_api_wrap" tabindex="0">
+												<div style="text-align:center;">
+													<img src="./images/hichart2_img_01.png" style="max-width:inherit;" alt="chart">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="define_data_wrap">
+										<div class="data_tail_table_wrap">
+											<table class="data_tail_table">
+												<caption>민원 접수 현황표</caption>
+												<!-- <colgroup>
+													<col />
+													<col style="width:24%;" />
+													<col style="width:24%;" />
+													<col style="width:24%;" />
+												</colgroup> -->
+												<thead>
+													<tr>
+														<th scope="col" class="short_cell"><span class="data_tail_thtext">구분</span></th>
+														<th scope="col"><span class="data_tail_thtext">2019년</span></th>
+														<th scope="col"><span class="data_tail_thtext">2020년</span></th>
+														<th scope="col"><span class="data_tail_thtext">2021년</span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row" class="short_cell"><span class="data_tail_tdlabel">건수</span></th>
+														<td><span class="data_tail_value">2,308,191</span></td>
+														<td><span class="data_tail_value">2,308,191</span></td>
+														<td><span class="data_tail_value">2,308,191</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- // chart_data_item -->
+								<!-- chart_data_item -->
+								<div class="chart_data_item">
+									<div class="define_chart_wrap">
+										<div class="chart_data_title_row">
+											<div class="chart_data_main_cell">
+												<div class="chart_data_title_group">
+													<p class="chart_data_title">분야별</p>
+													<p class="chart_data_sub">단위 : 건</p>
+												</div>
+											</div>
+											<div class="chart_data_sub_cell">
+												<div class="chart_data_field">
+													<div class="data_field_long"><select class="form_select" title="분야별 년도 선택">
+															<option value="2021">2021년</option>
+															<option value="2020">2020년</option>
+															<option value="2019">2019년</option>
+														</select></div>
+													<div class="data_field_short"><a href="javascript:;" class="btn_sfsubmit design_2" title="검색"><span class="hdtext">검색</span></a></div>
+												</div>
+											</div>
+										</div>
+										<div class="chart_data_content_row">
+											<div class="chart_data_donut_wrap">
+												<div class="chart_donut_item">
+													<div class="chart_donut_api">
+														<img src="./images/hichart2_img_donut_01.png" alt="chart">
+													</div>
+													<div class="chart_donut_label type2">
+														<div class="donut_label_group">
+															<span class="donut_label_main">2021</span>
+															<span class="donut_label_sub">년</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="chart_data_donut_info_wrap">
+												<ul class="chart_specitem_list">
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#6cc795;"></div>
+															</div>
+															<div class="define_text">교통</div>
+														</div>
+													</li>
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#9bd63f;"></div>
+															</div>
+															<div class="define_text">환경/안전</div>
+														</div>
+													</li>
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#5cc8df;"></div>
+															</div>
+															<div class="define_text">복지/문화/경제</div>
+														</div>
+													</li>
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#d269a9;"></div>
+															</div>
+															<div class="define_text">주택/건설</div>
+														</div>
+													</li>
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#7b70cf;"></div>
+															</div>
+															<div class="define_text">기타</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="define_data_wrap">
+										<div class="data_tail_table_wrap">
+											<table class="data_tail_table">
+												<caption>분야별 현황표</caption>
+												<!-- <colgroup>
+													<col />
+													<col style="width:24%;" />
+													<col style="width:24%;" />
+													<col style="width:24%;" />
+												</colgroup> -->
+												<thead>
+													<tr>
+														<th scope="col" class="short_cell"><span class="data_tail_thtext">구분</span></th>
+														<th scope="col"><span class="data_tail_thtext">2019년</span></th>
+														<th scope="col"><span class="data_tail_thtext">2020년</span></th>
+														<th scope="col"><span class="data_tail_thtext">2021년</span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">교통</span></th>
+														<td><span class="data_tail_value">1,428,483</span></td>
+														<td><span class="data_tail_value">1,524,681</span></td>
+														<td><span class="data_tail_value">1,393,767</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">환경/안전</span></th>
+														<td><span class="data_tail_value">488,143</span></td>
+														<td><span class="data_tail_value">545,151</span></td>
+														<td><span class="data_tail_value">465,339</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">복지/문화/경제</span></th>
+														<td><span class="data_tail_value">74,129</span></td>
+														<td><span class="data_tail_value">21,677</span></td>
+														<td><span class="data_tail_value">100,599</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">주택/건설</span></th>
+														<td><span class="data_tail_value">137,391</span></td>
+														<td><span class="data_tail_value">100,923</span></td>
+														<td><span class="data_tail_value">126,554</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">기타</span></th>
+														<td><span class="data_tail_value">180,045</span></td>
+														<td><span class="data_tail_value">158,830</span></td>
+														<td><span class="data_tail_value">152,463</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- // chart_data_item -->
+								<!-- chart_data_item -->
+								<div class="chart_data_item">
+									<div class="define_chart_wrap">
+										<div class="chart_data_title_row">
+											<div class="chart_data_main_cell">
+												<div class="chart_data_title_group">
+													<p class="chart_data_title">신청방법별</p>
+													<p class="chart_data_sub">단위 : 건</p>
+												</div>
+											</div>
+											<div class="chart_data_sub_cell">
+												<div class="chart_data_field">
+													<div class="data_field_long"><select class="form_select" title="신청방법별 년도 선택">
+															<option value="2021">2021년</option>
+															<option value="2020">2020년</option>
+															<option value="2019">2019년</option>
+														</select></div>
+													<div class="data_field_short"><a href="javascript:;" class="btn_sfsubmit design_2" title="검색"><span class="hdtext">검색</span></a></div>
+												</div>
+											</div>
+										</div>
+										<div class="chart_data_content_row">
+											<div class="chart_data_donut_wrap">
+												<div class="chart_donut_item">
+													<div class="chart_donut_api">
+														<img src="./images/hichart2_img_donut_02.png" alt="chart">
+													</div>
+													<div class="chart_donut_label type2">
+														<div class="donut_label_group">
+															<span class="donut_label_main">2021</span>
+															<span class="donut_label_sub">년</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="chart_data_donut_info_wrap">
+												<ul class="chart_specitem_list">
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#6cc795;"></div>
+															</div>
+															<div class="define_text">홈페이지</div>
+														</div>
+													</li>
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#9bd63f;"></div>
+															</div>
+															<div class="define_text">전화</div>
+														</div>
+													</li>
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#5cc8df;"></div>
+															</div>
+															<div class="define_text">문자</div>
+														</div>
+													</li>
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#d269a9;"></div>
+															</div>
+															<div class="define_text">모바일앱</div>
+														</div>
+													</li>
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#7b70cf;"></div>
+															</div>
+															<div class="define_text">국민신문고</div>
+														</div>
+													</li>
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#f1d850;"></div>
+															</div>
+															<div class="define_text">기타</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="define_data_wrap">
+										<div class="data_tail_table_wrap">
+											<table class="data_tail_table">
+												<caption>신청방법별 현황표</caption>
+												<!-- <colgroup>
+													<col />
+													<col style="width:24%;" />
+													<col style="width:24%;" />
+													<col style="width:24%;" />
+												</colgroup> -->
+												<thead>
+													<tr>
+														<th scope="col" class="short_cell"><span class="data_tail_thtext">구분</span></th>
+														<th scope="col"><span class="data_tail_thtext">2019년</span></th>
+														<th scope="col"><span class="data_tail_thtext">2020년</span></th>
+														<th scope="col"><span class="data_tail_thtext">2021년</span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">홈페이지</span></th>
+														<td><span class="data_tail_value">55,281</span></td>
+														<td><span class="data_tail_value">69,412</span></td>
+														<td><span class="data_tail_value">88,946</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">전화</span></th>
+														<td><span class="data_tail_value">569,315</span></td>
+														<td><span class="data_tail_value">417,989</span></td>
+														<td><span class="data_tail_value">415,503</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">문자</span></th>
+														<td><span class="data_tail_value">349,446</span></td>
+														<td><span class="data_tail_value">385,225</span></td>
+														<td><span class="data_tail_value">371,010</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">모바일앱</span></th>
+														<td><span class="data_tail_value">571,947</span></td>
+														<td><span class="data_tail_value">585,093</span></td>
+														<td><span class="data_tail_value">677,481</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">국민신문고</span></th>
+														<td><span class="data_tail_value">548,101</span></td>
+														<td><span class="data_tail_value">564,181</span></td>
+														<td><span class="data_tail_value">336,895</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">기타</span></th>
+														<td><span class="data_tail_value">214,101</span></td>
+														<td><span class="data_tail_value">329,362</span></td>
+														<td><span class="data_tail_value">348,890</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- // chart_data_item -->
+								<!-- chart_data_item -->
+								<div class="chart_data_item">
+									<div class="define_chart_wrap">
+										<div class="chart_data_title_row">
+											<div class="chart_data_main_cell">
+												<div class="chart_data_title_group">
+													<p class="chart_data_title">처리기관별</p>
+													<p class="chart_data_sub">단위 : 건</p>
+												</div>
+											</div>
+										</div>
+										<div class="chart_data_content_row">
+											<div class="chart_data_api_wrap">
+												<img src="./images/hichart2_img_02.png" style="max-width:inherit;" alt="chart">
+											</div>
+											<div class="chart_data_donut_info_wrap">
+												<ul class="chart_specitem_list">
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#4264c2;"></div>
+															</div>
+															<div class="define_text">서울시</div>
+														</div>
+													</li>
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#5cc8df;"></div>
+															</div>
+															<div class="define_text">자치구</div>
+														</div>
+													</li>
+													<li>
+														<div class="chart_specitem">
+															<div class="define_circle">
+																<div class="chart_dot" style="background-color:#6cc795;"></div>
+															</div>
+															<div class="define_text">투자출연기관</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="define_data_wrap">
+										<div class="data_tail_table_wrap">
+											<table class="data_tail_table">
+												<caption>처리기관별 현황표</caption>
+												<!-- <colgroup>
+													<col />
+													<col style="width:24%;" />
+													<col style="width:24%;" />
+													<col style="width:24%;" />
+												</colgroup> -->
+												<thead>
+													<tr>
+														<th scope="col" class="short_cell"><span class="data_tail_thtext">구분</span></th>
+														<th scope="col"><span class="data_tail_thtext">2019년</span></th>
+														<th scope="col"><span class="data_tail_thtext">2020년</span></th>
+														<th scope="col"><span class="data_tail_thtext">2021년</span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row" class="short_cell"><span class="data_tail_tdlabel">건수</span></th>
+														<td><span class="data_tail_value">2,308,191</span></td>
+														<td><span class="data_tail_value">2,308,191</span></td>
+														<td><span class="data_tail_value">2,308,191</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- // chart_data_item -->
+								<!-- chart_data_item -->
+								<div class="chart_data_item">
+									<div class="define_chart_wrap">
+										<div class="chart_data_title_row">
+											<div class="chart_data_main_cell">
+												<div class="chart_data_title_group">
+													<p class="chart_data_title">자치구별</p>
+													<p class="chart_data_sub">단위 : 천 건</p>
+												</div>
+												<p class="chart_data_insub">민원량이 많은 <strong>TOP<span class="emp">5</span></strong> 자치구 표시</p>
+											</div>
+											<div class="chart_data_sub_cell">
+												<div class="chart_data_field">
+													<div class="data_field_long"><select class="form_select" title="자치구별 년도 선택" id="local_select">
+															<option value="2021">2021년</option>
+															<option value="2020">2020년</option>
+															<option value="2019">2019년</option>
+														</select></div>
+													<div class="data_field_short"><a href="javascript:;" class="btn_sfsubmit design_2" title="검색" id="btn_local_submit"><span class="hdtext">검색</span></a></div>
+												</div>
+											</div>
+										</div>
+										<div class="chart_data_content_row">
+											<div class="maptab_cont" id="map2021" style="display:block;">
+												<img src="./images/map_seoul_2021.png" alt="2021년 강남구 137, 강동구 119, 강북구 43, 강서구 94, 관악구 99, 광진구 58, 구로구 47, 금천구 36, 노원구 40, 도봉구 31, 동대문구 61, 동작구 34, 마포구 131, 서대문구 93, 서초구 108, 성동구 41, 성북구 50, 송파구 102, 양천구 59, 영등포구 85, 용산구 74, 은평구 58, 종로구 70, 중구 55, 중랑구 45" title="2021년 자치구별 통계 차트">
+											</div>
+											<div class="maptab_cont" id="map2020">
+												<img src="./images/map_seoul_2020.png" alt="2020년 강남구 116, 강동구 121, 강북구 39, 강서구 80, 관악구 95, 광진구 53, 구로구 46, 금천구 24, 노원구 50, 도봉구 30, 동대문구 68, 동작구 35, 마포구 119, 서대문구 81, 서초구 79, 성동구 38, 성북구 49, 송파구 101, 양천구 56, 영등포구 86, 용산구 67, 은평구 67, 종로구 70, 중구 48, 중랑구 41" title="2020년 자치구별 통계 차트">
+											</div>
+											<div class="maptab_cont" id="map2019">
+												<img src="./images/map_seoul_2019.png" alt="2019년 강남구 120, 강동구 100, 강북구 38, 강서구 78, 관악구 89, 광진구 58, 구로구 55, 금천구 27, 노원구 57, 도봉구 30, 동대문구 67, 동작구 41, 마포구 92, 서대문구 70, 서초구 79, 성동구 46, 성북구 52, 송파구 93, 양천구 57, 영등포구 84, 용산구 73, 은평구 86, 종로구 73, 중구 65, 중랑구 41" title="2019년 자치구별 통계 차트">
+											</div>
+										</div>
+									</div>
+									<div class="define_data_wrap type2">
+										<div class="data_tail_table_wrap">
+											<table class="data_tail_table">
+												<caption>자치구별 현황표</caption>
+												<!-- <colgroup>
+													<col />
+													<col style="width:24%;" />
+													<col style="width:24%;" />
+													<col style="width:24%;" />
+												</colgroup> -->
+												<thead>
+													<tr>
+														<th scope="col" class="short_cell"><span class="data_tail_thtext">구분</span></th>
+														<th scope="col"><span class="data_tail_thtext">2019년</span></th>
+														<th scope="col"><span class="data_tail_thtext">2020년</span></th>
+														<th scope="col"><span class="data_tail_thtext">2021년</span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">강남구</span></th>
+														<td><span class="data_tail_value">120,256</span></td>
+														<td><span class="data_tail_value">116,946</span></td>
+														<td><span class="data_tail_value">137,216</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">강동구</span></th>
+														<td><span class="data_tail_value">100,725</span></td>
+														<td><span class="data_tail_value">121,638</span></td>
+														<td><span class="data_tail_value">119,041</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">강북구</span></th>
+														<td><span class="data_tail_value">38,078</span></td>
+														<td><span class="data_tail_value">39,812</span></td>
+														<td><span class="data_tail_value">43,156</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">강서구</span></th>
+														<td><span class="data_tail_value">78,182</span></td>
+														<td><span class="data_tail_value">80,995</span></td>
+														<td><span class="data_tail_value">94,225</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">관악구</span></th>
+														<td><span class="data_tail_value">89,669</span></td>
+														<td><span class="data_tail_value">95,547</span></td>
+														<td><span class="data_tail_value">99,574</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">광진구</span></th>
+														<td><span class="data_tail_value">58,570</span></td>
+														<td><span class="data_tail_value">53,254</span></td>
+														<td><span class="data_tail_value">58,206</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">구로구</span></th>
+														<td><span class="data_tail_value">55,518</span></td>
+														<td><span class="data_tail_value">46,224</span></td>
+														<td><span class="data_tail_value">47,776</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">금천구</span></th>
+														<td><span class="data_tail_value">27,743</span></td>
+														<td><span class="data_tail_value">24,004</span></td>
+														<td><span class="data_tail_value">36,783</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">노원구</span></th>
+														<td><span class="data_tail_value">57,817</span></td>
+														<td><span class="data_tail_value">50,622</span></td>
+														<td><span class="data_tail_value">40,761</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">도봉구</span></th>
+														<td><span class="data_tail_value">30,314</span></td>
+														<td><span class="data_tail_value">30,869</span></td>
+														<td><span class="data_tail_value">31,551</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">동대문구</span></th>
+														<td><span class="data_tail_value">67,023</span></td>
+														<td><span class="data_tail_value">68,937</span></td>
+														<td><span class="data_tail_value">61,187</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">동작구</span></th>
+														<td><span class="data_tail_value">41,067</span></td>
+														<td><span class="data_tail_value">35,902</span></td>
+														<td><span class="data_tail_value">34,802</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">마포구</span></th>
+														<td><span class="data_tail_value">92,909</span></td>
+														<td><span class="data_tail_value">119,760</span></td>
+														<td><span class="data_tail_value">131,988</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">서대문구</span></th>
+														<td><span class="data_tail_value">70,879</span></td>
+														<td><span class="data_tail_value">81,582</span></td>
+														<td><span class="data_tail_value">93,950</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">서초구</span></th>
+														<td><span class="data_tail_value">79,557</span></td>
+														<td><span class="data_tail_value">79,470</span></td>
+														<td><span class="data_tail_value">108,413</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">성동구</span></th>
+														<td><span class="data_tail_value">46,399</span></td>
+														<td><span class="data_tail_value">38,644</span></td>
+														<td><span class="data_tail_value">41,973</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">성북구</span></th>
+														<td><span class="data_tail_value">52,147</span></td>
+														<td><span class="data_tail_value">49,867</span></td>
+														<td><span class="data_tail_value">50,209</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">송파구</span></th>
+														<td><span class="data_tail_value">93,456</span></td>
+														<td><span class="data_tail_value">101,902</span></td>
+														<td><span class="data_tail_value">102,449</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">양천구</span></th>
+														<td><span class="data_tail_value">57,357</span></td>
+														<td><span class="data_tail_value">56,653</span></td>
+														<td><span class="data_tail_value">59,480</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">영등포구</span></th>
+														<td><span class="data_tail_value">84,695</span></td>
+														<td><span class="data_tail_value">86,647</span></td>
+														<td><span class="data_tail_value">85,447</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">용산구</span></th>
+														<td><span class="data_tail_value">73,276</span></td>
+														<td><span class="data_tail_value">67,546</span></td>
+														<td><span class="data_tail_value">74,871</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">은평구</span></th>
+														<td><span class="data_tail_value">86,635</span></td>
+														<td><span class="data_tail_value">67,353</span></td>
+														<td><span class="data_tail_value">58,586</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">종로구</span></th>
+														<td><span class="data_tail_value">73,059</span></td>
+														<td><span class="data_tail_value">70,481</span></td>
+														<td><span class="data_tail_value">70,137</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">중구</span></th>
+														<td><span class="data_tail_value">65,632</span></td>
+														<td><span class="data_tail_value">48,726</span></td>
+														<td><span class="data_tail_value">55,359</span></td>
+													</tr>
+													<tr>
+														<th scope="row"><span class="data_tail_tdlabel">중랑구</span></th>
+														<td><span class="data_tail_value">41,248</span></td>
+														<td><span class="data_tail_value">41,158</span></td>
+														<td><span class="data_tail_value">45,315</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- // chart_data_item -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(function() {
+						// 자치구별 검색 - 개발전달용
+						$("#btn_local_submit").on("click", function() {
+							var select_value = $("#local_select")[0].value;
+							$(".maptab_cont").hide();
+							console.log(select_value);
+							$("#map" + select_value).show();
+						});
+					});
+					mobileMenuRock("#mbgnb04_05"); // 모바일 락
+				</script>
+			</div>
+		</section>
+
+		<!-- footer_wrap -->
+		<footer class="footer_wrap">
+			<div class="ftvitem01_wrap">
+				<div class="ftvitem01_fxin">
+					<div class="ftvitem01_left">
+						<ul class="ftsns_hlist">
+							<li><a href="https://www.facebook.com/seoul.kr" title="서울시 페이스북 새창열기" class="ftsns ftsns01" target="_blank"><span class="hdtext">facebook</span></a></li>
+							<li><a href="https://twitter.com/seoulmania" title="서울시 트위터 새창열기" class="ftsns ftsns02" target="_blank"><span class="hdtext">twitter</span></a></li>
+							<li><a href="http://blog.naver.com/haechiseoul/" title="서울시 블로그 새창열기" class="ftsns ftsns03" target="_blank"><span class="hdtext">blog</span></a></li>
+							<li><a href="http://instagram.com/seoul_official" title="인스타그램 새창열기" class="ftsns ftsns04" target="_blank"><span class="hdtext">Instagram</span></a></li>
+							<li><a href="http://tv.seoul.go.kr" title="라이브 서울 새창열기" class="ftsns ftsns05" target="_blank"><span class="hdtext">라이브서울</span></a></li>
+						</ul>
+					</div>
+					<div class="ftvitem01_right">
+						<div class="related_area">
+							<select title="유관사이트 선택" class="friend_site" id="friend_site">
+								<option value="" selected="selected">유관사이트 바로가기</option>
+								<option value="http://democracy.seoul.go.kr/front/index.do">민주주의서울</option>
+								<option value="https://120dasan.or.kr/dsnc/main/main.do">120다산콜재단</option>
+								<option value="http://seoulcitizenshall.kr">서울 시민청</option>
+								<option value="http://mediahub.seoul.go.kr/">내손안에 서울</option>
+								<option value="https://www.epeople.go.kr">국민신문고</option>
+							</select>
+							<a href="javascript:;" title="사이트 바로가기(새창열기)" class="btn_related_go">GO</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ftvitem02_wrap">
+				<div class="ftvitem02_fxin">
+					<div class="ftg_hitem_fzone">
+						<div class="ftv_hitem_fxwrap">
+							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원편람 바로가기">민원편람</a></div>
+							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="무인민원발급기 위치 바로가기">무인민원발급기 위치</a></div>
+							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="온라인 민원발급 바로가기">온라인 민원발급</a></div>
+							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원 안내관 바로가기">민원 안내관</a></div>
+							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="응답소 민원 통계 바로가기">응답소 민원 통계</a></div>
+							<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원공개사례 바로가기">민원공개사례</a></div>
+						</div>
+					</div>
+					<div class="ftv_banner_wrap">
+						<a href="#" class="ftv_banner"><img src="./images/temp/banner_footer_pc.png" alt="[개발연동]대체텍스트"></a>
+					</div>
+					<!-- mobile menu -->
+					<div class="mbftmenu_hlist_w">
+						<ul class="mbftmenu_hlist">
+							<li><a href="#" class="mbftmenu">응답소란?</a></li>
+							<li><a href="#" class="mbftmenu type2">개인정보처리방침</a></li>
+							<li><a href="#" class="mbftmenu">홈페이지 바로잡기</a></li>
+						</ul>
+					</div>
+					<!-- mobile menu -->
+					<div class="ftv_bot_wrap">
+						<div class="fbot_logo_cell"><span class="fbot_logo"><span class="hdtext">I&middot;SEOUL&middot;U 너와 나의 서울</span></span></div>
+						<div class="fcopy_cell">
+							<!-- pc menu -->
+							<ul class="ftmenu_hlist">
+								<li><a href="#" class="ftmenu">응답소란?</a></li>
+								<li><a href="#" class="ftmenu type2">개인정보처리방침</a></li>
+								<li><a href="#" class="ftmenu">홈페이지 바로잡기</a></li>
+							</ul>
+							<!-- // pc menu -->
+							<div class="ftcopy_w">
+								<p class="ftcopy">서울특별시청 (04524) 서울특별시 중구 세종대로 110</p>
+								<ul class="ftcopy_fxwrap">
+									<li>문의 : 02)120</li>
+									<li>응답소 홈페이지 이용방법 문의 : 시민봉사담당관 02)2133-7935</li>
+								</ul>
+								<p class="ftcopy_sub">© Seoul Metropolitan Government. All rights reserved.</p>
+							</div>
+						</div>
+						<div class="fsub_else_cell">
+							<a href="#" target="_blank" title="새창" class="foot_ismsp"><span class="hdtext">정보보호 및 개인정보보호 관리치계 인증 ISMS*P Personal information &amp; Information Security Management System</span></a>
+							<a href="#" target="_blank" title="새창" class="foot_webacc"><span class="hdtext">과학기술정보통신부 WA WEB ACCESSIBILITY (사)한국시각장애인협회 한국웹접근성평가센터</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- // footer_wrap -->
+	</div>
+</body>
+
+</html>
