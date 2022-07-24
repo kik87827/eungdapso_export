@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="천만 서울시민의 의견을 접수받는 온라인 민원신청 창구입니다. 민원신청 종류는 생활불편, 건의, 질의 민원과 더불어 인권침해, 민생침해 등 다양한 시민의 소리를 접수하고 처리합니다.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="./images/logo_icon_114.png">
+	<link rel="apple-touch-icon" href="./images/logo_icon_114.png">
+	<link href="./css/reset.css" rel="stylesheet">
+	<link href="./css/layout.css" rel="stylesheet">
+	<link href="./css/swiper.min.css" rel="stylesheet">
+	<link href="./css/jqueryui.css" rel="stylesheet">
+	<link href="./css/contents.css" rel="stylesheet">
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery.cookie.js"></script>
+	<script src="./js/hoverIntent.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/iscroll.js"></script>
+	<script src="./js/front.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<title>작성사례 | 지방세 이의신청 | 민원신청 | 응답소</title>
+</head>
+
+<body class="front_body">
+	<!-- skip menu -->
+	<ul class="skiplist">
+		<li class="skip pc_skip"><a href="#gnb">주메뉴 바로가기</a></li>
+		<li class="skip mb_skip"><a href="#mobile_gnb">주메뉴 바로가기</a></li>
+		<li class="skip"><a href="#content">본문내용으로 바로가기</a></li>
+	</ul>
+	<!-- //skip menu -->
+	<div class="page_wrap">
+		<!-- header_wrap  -->
+		<header class="header_wrap">
+			<!-- 서울시 연동 -->
+			<div class="head_linkage_zone">
+				<!-- 연동영역 더미코딩 -->
+				<div style="background:#1085e5;height:48px;display:flex;align-items:center;justify-content: center;color:#fff;font-size:16px;line-height:1;" id="temp_header">서울시 연동영역</div>
+				<style>
+					@media (max-width:1023px) {
+						#temp_header {
+							height: 30px !important;
+							font-size: 14px !important;
+						}
+					}
+				</style>
+				<!-- // 연동영역 더미코딩 -->
+			</div>
+			<!-- // 서울시 연동 -->
+			<div class="head_group">
+				<!-- mobile -->
+				<a href="#" class="btn_mbmenucall"><span class="btn_mbmenucall_in"></span><span class="hdtext">메인메뉴 열기</span></a>
+				<div class="mobile_mainmenu_zone">
+					<div class="mainmenu_dim"></div>
+					<div class="mobile_mainmenu_wrap" id="mobile_gnb">
+						<div class="mbutil_low">
+							<span class="mbmenu_logo"><span class="hdtext">응답소</span></span>
+							<div class="mbutil_hlist_w">
+								<ul class="mbutil_hlist">
+
+
+									<!-- 로그인 전 -->
+									<li><a href="#" class="mbutil">회원가입</a></li>
+									<li><a href="#" class="mbutil">로그인</a></li>
+									<!-- // 로그인 전 -->
+
+								</ul>
+							</div>
+						</div>
+						<div class="mbmenu_low">
+							<div class="mbmenu_isc">
+								<ul class="mbmenu_vlist">
+									<li id="mb_gnb01">
+										<a href="#" class="mbmenu_one">민원신청</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb01_01"><a href="#" class="mbmenu_two">시정일반 질의ㆍ건의</a></li>
+												<li id="mbgnb01_02"><a href="#" class="mbmenu_two">코로나19 방역수칙 위반 신고센터</a></li>
+												<li id="mbgnb01_03"><a href="#" class="mbmenu_two">코로나19 백신접종 신고</a></li>
+												<li id="mbgnb01_04"><a href="#" class="mbmenu_two">시장에게 바란다</a></li>
+												<li id="mbgnb01_05"><a href="#" class="mbmenu_two">시장 핫라인(공익제보)</a></li>
+												<li id="mbgnb01_06"><a href="#" class="mbmenu_two">투자출연기관 비리신고</a></li>
+												<li id="mbgnb01_07"><a href="#" class="mbmenu_two">하도급 부조리 신고</a></li>
+												<li id="mbgnb01_08"><a href="#" class="mbmenu_two">인권침해 구제신청</a></li>
+												<li id="mbgnb01_09"><a href="#" class="mbmenu_two">민생침해신고(눈물그만)</a></li>
+												<li id="mbgnb01_10"><a href="#" class="mbmenu_two">노동조사신고</a></li>
+												<li id="mbgnb01_11"><a href="#" class="mbmenu_two">지방세 이의신청</a></li>
+												<li id="mbgnb01_12"><a href="#" class="mbmenu_two">성평등 노동조사신고</a></li>
+												<li id="mbgnb01_14"><a href="#" class="mbmenu_two">적극행정 국민신청 제도</a></li>
+												<li id="mbgnb01_13"><a href="#" class="mbmenu_two define_blank" title="새창" target="_blank">공직비리 익명신고</a></li>
+											</ul>
+										</div>
+									</li>
+									<li id="mb_gnb02">
+										<a href="#" class="mbmenu_one">민원결과</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb02_01"><a href="#" class="mbmenu_two">응답소 민원결과</a></li>
+												<li id="mbgnb02_02"><a href="#" class="mbmenu_two">120 민원결과</a></li>
+												<li id="mbgnb02_03"><a href="#" class="mbmenu_two">SNS 민원결과</a></li>
+												<li id="mbgnb02_04"><a href="#" class="mbmenu_two">방문ㆍ서신ㆍ유선 민원결과</a></li>
+												<li id="mbgnb02_05"><a href="#" class="mbmenu_two">국민신문고 민원결과</a></li>
+												<li id="mbgnb02_06"><a href="#" class="mbmenu_two">방문 신청한 서식민원 조회</a></li>
+											</ul>
+										</div>
+									</li>
+									<li id="mb_gnb03">
+										<a href="#" class="mbmenu_one">민원사례</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb03_01"><a href="#" class="mbmenu_two">자주 찾는 민원사례</a></li>
+												<li id="mbgnb03_02"><a href="#" class="mbmenu_two">민원 공개사례</a></li>
+												<li id="mbgnb03_03"><a href="#" class="mbmenu_two">민원서비스 우수사례</a></li>
+											</ul>
+										</div>
+									</li>
+									<li id="mb_gnb04">
+										<a href="#" class="mbmenu_one">정보</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb04_01"><a href="#" class="mbmenu_two">민원편람</a></li>
+												<li id="mbgnb04_02"><a href="#" class="mbmenu_two">무인민원발급기 위치</a></li>
+												<li id="mbgnb04_03"><a href="#" class="mbmenu_two">위원회 협의 내용 조회</a></li>
+												<li id="mbgnb04_04"><a href="#" class="mbmenu_two">행정서비스 헌장</a></li>
+												<li id="mbgnb04_05"><a href="#" class="mbmenu_two">응답소 민원 통계</a></li>
+											</ul>
+										</div>
+									</li>
+									<li id="mb_gnb05">
+										<a href="#" class="mbmenu_one">고객소통센터</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb05_01"><a href="#" class="mbmenu_two">공지사항</a></li>
+												<li id="mbgnb05_02"><a href="#" class="mbmenu_two">SNS 긴급메시지</a></li>
+												<li id="mbgnb05_03"><a href="#" class="mbmenu_two">자주 묻는 질문</a></li>
+												<li id="mbgnb05_04"><a href="#" class="mbmenu_two">찾아가는 서울시청</a></li>
+												<li id="mbgnb05_05"><a href="#" class="mbmenu_two">민원안내관</a></li>
+												<li id="mbgnb05_06"><a href="#" class="mbmenu_two">응답소란</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="btn_mbmenuclose"><span class="hdtext">메인메뉴 닫기</span></a>
+					</div>
+				</div>
+				<!-- // mobile -->
+				<div class="pix_in">
+					<div class="header_both">
+						<div class="header_cell head_left">
+							<h1 class="header_toplogo"><a href="#" class="toplogo_link"><span class="hdtext">응답소</span></a></h1>
+						</div>
+						<div class="header_cell head_right">
+							<div class="headgnb_list_wrap" id="gnb">
+								<ul class="headgnb_list">
+									<li>
+										<a href="#" class="hgm">민원신청</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">시정일반 질의ㆍ건의</a></li>
+												<li><a href="#" class="htm">코로나19 방역수칙 위반 신고센터</a></li>
+												<li><a href="#" class="htm">코로나19 백신접종 신고</a></li>
+												<li><a href="#" class="htm">시장에게 바란다</a></li>
+												<li><a href="#" class="htm">시장 핫라인(공익제보)</a></li>
+												<li><a href="#" class="htm">투자출연기관 비리신고</a></li>
+												<li><a href="#" class="htm">하도급 부조리 신고</a></li>
+												<li><a href="#" class="htm">인권침해 구제신청</a></li>
+												<li><a href="#" class="htm">민생침해신고(눈물그만)</a></li>
+												<li><a href="#" class="htm">노동조사신고</a></li>
+												<li><a href="#" class="htm">지방세 이의신청</a></li>
+												<li><a href="#" class="htm">성평등 노동조사신고</a></li>
+												<li><a href="#" class="htm">적극행정 국민신청 제도</a></li>
+												<li><a href="#" class="htm">공직비리 익명신고</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="hgm">민원결과</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">응답소 민원결과</a></li>
+												<li><a href="#" class="htm">120 민원결과</a></li>
+												<li><a href="#" class="htm">SNS 민원결과</a></li>
+												<li><a href="#" class="htm">방문ㆍ서신ㆍ유선 민원결과</a></li>
+												<li><a href="#" class="htm">국민신문고 민원결과</a></li>
+												<li><a href="#" class="htm">방문 신청한 서식민원 조회</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="hgm">민원사례</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">자주 찾는 민원사례</a></li>
+												<li><a href="#" class="htm">민원 공개사례</a></li>
+												<li><a href="#" class="htm">민원서비스 우수사례</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="hgm">정보</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">민원편람</a></li>
+												<li><a href="#" class="htm">무인민원발급기 위치</a></li>
+												<li><a href="#" class="htm">위원회 협의 내용 조회</a></li>
+												<li><a href="#" class="htm">행정서비스 헌장</a></li>
+												<li><a href="#" class="htm">응답소 민원 통계</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="hgm">고객소통센터</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">공지사항</a></li>
+												<li><a href="#" class="htm">SNS 긴급메시지</a></li>
+												<li><a href="#" class="htm">자주 묻는 질문</a></li>
+												<li><a href="#" class="htm">찾아가는 서울시청</a></li>
+												<li><a href="#" class="htm">민원안내관</a></li>
+												<li><a href="#" class="htm">응답소란</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="headelse_list_wrap">
+								<div class="headelse_list_in">
+									<ul class="util_list">
+
+
+										<!-- 로그인 전 -->
+										<li><a href="#" class="util hasico ico_01"><span class="util_ein">로그인</span></a></li>
+										<li><a href="#" class="util"><span class="util_ein">회원가입</span></a></li>
+										<!-- // 로그인 전 -->
+
+
+									</ul>
+								</div>
+								<!-- [2차전달] 220419 HTML 변경 -->
+								<div class="headgnb_search_w">
+									<a href="javascript:;" class="btn_headsearch" data-closeText="검색창 닫기">
+										<span class="hdtext opencase">검색</span>
+									</a>
+								</div>
+								<!-- // [2차전달] 220419 HTML 변경 -->
+							</div>
+						</div>
+					</div>
+					<div class="gnb_depbg"></div>
+				</div>
+			</div>
+			<!-- 검색 레이어 -->
+			<div class="search_toplayer">
+				<div class="search_topfield_w">
+					<div class="search_topfield">
+						<label for="search_topitem" class="hdtext">검색어 입력</label>
+						<input type="text" id="search_topitem" class="search_topinput" title="검색어 입력" placeholder="검색어를 입력해주세요.">
+						<a href="javascript:;" class="btn_topsearch_submit" title="검색"><span class="hdtext">검색</span></a>
+					</div>
+					<div class="search_keyword_low">
+						<div class="top_keyword_label_w"><span class="top_keyword_label">이슈검색어</span></div>
+						<ul class="top_keyword_flist">
+							<li><a href="javascript:;" class="top_keyword">#이관민원 조회</a></li>
+							<li><a href="javascript:;" class="top_keyword">#백신접종장소</a></li>
+							<li><a href="javascript:;" class="top_keyword">#코로나19 QnA</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- // 검색 레이어 -->
+		</header>
+		<!-- // header_wrap -->
+		<section class="mid_contents">
+			<!-- submap -->
+			<div class="submap_zone_parent">
+				<div class="submap_zone">
+					<div class="sub_map_pixin">
+						<a href="/" class="sub_map_home"><span class="hdtext">홈</span></a>
+						<div class="sub_map_fxwrap">
+							<div class="sub_map_fxitem">
+								<div class="sub_map_toggle_wrap">
+									<a href="javascript:;" class="map_toggle_current">민원신청</a>
+									<div class="map_depth_vlist_wrap">
+										<ul class="map_depth_vlist">
+											<li class="active"><a href="#" class="map_depth">민원신청</a></li>
+											<li><a href="#" class="map_depth">민원결과</a></li>
+											<li><a href="#" class="map_depth">민원사례</a></li>
+											<li><a href="#" class="map_depth">정보</a></li>
+											<li><a href="#" class="map_depth">고객소통센터</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="sub_map_fxitem">
+								<div class="sub_map_toggle_wrap">
+									<a href="javascript:;" class="map_toggle_current">지방세 이의신청</a>
+									<div class="map_depth_vlist_wrap">
+										<ul class="map_depth_vlist">
+											<li><a href="#" class="map_depth">시정일반 질의ㆍ건의</a></li>
+											<li><a href="#" class="map_depth">코로나19 방역수칙 위반 신고센터</a></li>
+											<li><a href="#" class="map_depth">코로나19 백신접종 신고</a></li>
+											<li><a href="#" class="map_depth">시장에게 바란다</a></li>
+											<li><a href="#" class="map_depth">시장 핫라인(공익제보)</a></li>
+											<li><a href="#" class="map_depth">투자출연기관 비리신고</a></li>
+											<li><a href="#" class="map_depth">하도급 부조리 신고</a></li>
+											<li><a href="#" class="map_depth">인권침해 구제신청</a></li>
+											<li><a href="#" class="map_depth">민생침해신고(눈물그만)</a></li>
+											<li><a href="#" class="map_depth">노동조사신고</a></li>
+											<li class="active"><a href="#" class="map_depth">지방세 이의신청</a></li>
+											<li><a href="#" class="map_depth">성평등 노동조사신고</a></li>
+											<li><a href="#" class="map_depth">적극행정 국민신청 제도</a></li>
+											<li><a href="#" class="map_depth define_blank" title="새창" target="_blank">공직비리 익명신고</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="sub_map_fxitem">
+								<div class="sub_map_toggle_wrap">
+									<a href="javascript:;" class="map_toggle_current">작성사례</a>
+									<div class="map_depth_vlist_wrap">
+										<ul class="map_depth_vlist">
+											<li><a href="#" class="map_depth">제도안내</a></li>
+											<li><a href="#" class="map_depth">이의신청</a></li>
+											<li><a href="#" class="map_depth">의견진술신청</a></li>
+											<li><a href="#" class="map_depth">신청조회</a></li>
+											<li><a href="#" class="map_depth">FAQ</a></li>
+											<li class="active"><a href="#" class="map_depth">작성사례</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // submap -->
+			<div class="subcont_zone" id="content">
+				<!-- subdep2_vobj_zone -->
+				<div class="subdep2_vobj_zone">
+					<h2 class="subdep2_vtitle">지방세 이의신청</h2>
+					<div class="sctab_hlist_w">
+						<ul class="sctab_hlist" id="contents_hlist">
+							<li><a href="#" class="sctab">제도안내</a></li>
+							<li><a href="#" class="sctab">이의신청</a></li>
+							<li><a href="#" class="sctab">의견진술신청</a></li>
+							<li><a href="#" class="sctab">신청조회</a></li>
+							<li><a href="#" class="sctab">FAQ</a></li>
+							<li class="active"><a href="#" class="sctab">작성사례</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- // subdep2_vobj_zone -->
+				<div class="sctab_contents" id="contents_group">
+					<!-- subdep3_vobj_zone -->
+					<div class="subdep3_vobj_zone">
+						<h3 class="subdep3_vtitle">작성사례</h3>
+					</div>
+					<!-- // subdep3_vobj_zone -->
+					<div class="subcont_wrap mtype4" id="scroll_ui">
+						<div class="scdep_tab_hlist_parent">
+							<div class="scdep_tab_hlist_z">
+								<div class="scdep_tab_hlist_w dtype2 dtype2_2">
+									<ul class="scdep_tab_hlist">
+										<li class="active"><a href="#scroll_content_01" class="scdep_tab">이의신청</a></li>
+										<li><a href="#scroll_content_02" class="scdep_tab">이의신청불복상서</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="scdep_cont_w scroll_content_zone">
+							<div class="scroll_content" id="scroll_content_01">
+								<h4 class="hdtext">이의신청</h4>
+								<h5 class="scroll_content_title">이의신청서 예시</h5>
+								<div class="scroll_content_wrap">
+									<div class="docu_img_w">
+										<img src="./images/img_docu_example.png" alt="이의신청서 예시 - 자세한 내용은 아래와 같습니다.">
+										<div class="hdtext">
+											<p>아래 빨간색으로 표기되어진 항목을 본인의 신청사유에 맞게 수정합니다.</p>
+											<p>지방세기본법 시행규칙[별지 제75호서식](앞쪽)</p>
+											<table>
+												<caption>이의신청서 예시 서식표</caption>
+												<tr>
+													<td rowspan="2" colspan="4">지방세 이의신청서</td>
+													<td>처리기간</td>
+												</tr>
+												<tr>
+													<td>90일</td>
+												</tr>
+												<tr>
+													<th scope="row" rowspan="4">신청인</th>
+													<th scope="row">①성명(대표자)</th>
+													<td>홍길동</td>
+													<th scope="row">②주민(법인,외국인) 등록번호</th>
+													<td>654321-1234567</td>
+												</tr>
+												<tr>
+													<th scope="row">③상호(법인명)</th>
+													<td>내용없음</td>
+													<th scope="row">④사업자등록번호</th>
+													<td>내용없음</td>
+												</tr>
+												<tr>
+													<th scope="row">⑤주소(영업소)</th>
+													<td colspan="3">□□□-□□□ 서울시 중고 서소문동 37번지 서울아파트 101동 1203호</td>
+												</tr>
+												<tr>
+													<th scope="row">⑥전화번호</th>
+													<td>02-3707-8526(휴대전화 010-2341-4321)</td>
+													<th scope="row">⑦전자우편주소</th>
+													<td>abcd1234@neiber.com</td>
+												</tr>
+												<tr>
+													<th scope="row" rowspan="4">대리인</th>
+													<th scope="row">①성명(대표자)</th>
+													<td>세무사 김갑동</td>
+													<th scope="row">②주민(법인,외국인) 등록번호</th>
+													<td>534321-1123456</td>
+												</tr>
+												<tr>
+													<th scope="row">③상호(법인명)</th>
+													<td>동방 세무법인</td>
+													<th scope="row">④사업자등록번호</th>
+													<td>104-81-00466</td>
+												</tr>
+												<tr>
+													<th scope="row">⑤주소(영업소)</th>
+													<td colspan="3">□□□-□□□ 서울시 종로구 서린동 151번지 갑을 빌딩 4층 501호</td>
+												</tr>
+												<tr>
+													<th scope="row">⑥전화번호</th>
+													<td>3202-5234(휴대전화:010-510-5120)</td>
+													<th scope="row">⑦전자우편주소</th>
+													<td>gdkim07@naver.com</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">⑧통지를 받은 연월일 또는 처분이 있었음을 안 연월일</th>
+													<td>2011.1.27</td>
+													<th scope="row">⑨처분청 중구</th>
+													<td>중구청</td>
+												</tr>
+												<tr>
+													<th scope="row" rowspan="2">⑩통지된 사항 또는 처분 내용</th>
+													<th scope="row">세목</th>
+													<td>취득세</td>
+													<th scope="row">세액</th>
+													<td>1,521,080원</td>
+												</tr>
+												<tr>
+													<th scope="row">세부내용</th>
+													<td colspan="3">서울시 중구 서소문동 10번지 취득에 따른 취득세</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">⑪불복사유</th>
+													<td colspan="3">(이의신청불복사유서 별첨)</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">⑫결정서 전자송달 신청 여부</th>
+													<td colspan="3">체크박스 신청, 체크박스 신청하지 않음</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">⑬증명물건의 표시</th>
+													<td colspan="3">(별첨)</td>
+												</tr>
+												<tr>
+													<td colspan="5">
+														「지방세기본법」 제118조 및 같은 법 시행령 제95조제1항에 따라 별지와 같이 증명서류를 첨부하여 이의신청을 합니다.<br>
+														2011년 1월 27일 신청인(대리인) 홍길동 (서명 또는 인)<br>
+														지방자치 단체의 장 귀하
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">증명서류</th>
+													<td colspan="2">이의신청 사유를 증명할 수 있는 서류</td>
+													<th scope="row">수수료</th>
+													<td>없음</td>
+												</tr>
+												<tr>
+													<td colspan="5">
+														이 지방세 이의신청에 관한 일체의 권한을 상기 대리인에게 위임합니다.<br>위임자(서명 또는 인)
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table>
+												<caption>지방세 이의신청서 접수증 서식표</caption>
+												<thead>
+													<tr>
+														<th scope="col" colspan="4">지방세 이의신청서 접수증(접수번호 호)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">성명(법인명) </th>
+														<td>내용없음</td>
+														<th scope="row">주소(영업소)</th>
+														<td>내용없음</td>
+													</tr>
+													<tr>
+														<th scope="row" rowspan="2">증명서류</th>
+														<td rowspan="2">내용없음</td>
+														<th scope="row">접수자</th>
+														<td>내용없음</td>
+													</tr>
+													<tr>
+														<th scope="row">접수일자도장</th>
+														<td>내용없음</td>
+													</tr>
+												</tbody>
+											</table>
+											<p>210mmX297mm(일반용지 60g㎡(재활용품))</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="scroll_content" id="scroll_content_02">
+								<h4 class="scroll_content_title">이의신청불복상서</h4>
+								<div class="scroll_content_wrap">
+									<div class="text_guide_table_w">
+										<table class="text_guide_table widtype2">
+											<caption>이의신청불복상서 안내표</caption>
+											<colgroup>
+												<col style="width:20%;">
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" class="type2"><span class="th_intext">항목</span></th>
+													<th scope="col"><span class="th_intext">항목 설명</span></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="type2"><span class="emp_tdtext">신청취지</span></td>
+													<td>
+														○○ 구청장이 신청인에게 2007.00.00.납기 한으로 부과 고지한 취득세 000,000원, 등록세 000,000원 합계 000,000원 이를 취소(또는 경정)한다. 라는 결정을 구합니다.
+													</td>
+												</tr>
+												<tr>
+													<td class="type2"><span class="emp_tdtext">처분청 과세처분 요지</span></td>
+													<td>
+														○○ 구청장은 신청인이 2005.05.01. 신청인의 여동생 ○○○과 공동명의로 등록하여 서울특별시세 감면조례 제3조 규정에 의해
+														취득세 및 등록세를 면제 받은 ○○두 ○○○호 승용자동차(이하 “이건 자동차”라 하겠습니다)에 대하여 그 등록일로부터 3년 내에
+														세대별 주민등록표 상 세대분가를 하였다는 이유로 취득세 000,000원 등록세 000,000원 합계 000,000원을 2007.5.31. 납기 한으로
+														부과처분 하였습니다.
+													</td>
+												</tr>
+												<tr>
+													<td class="type2"><span class="emp_tdtext">신청인 불복사유</span></td>
+													<td>
+														신청인은 2급 장애인으로 이건 자동차를 취득하여 서울특별시세 감면조례 제3조 규정에 의해 취득세 및 등록세를 면제 받았으나, 공동
+														등록 명의자인 여동생의 결혼으로 인하여 부득이 하게 이건 자동차를 신규등록한 날로부터 3년 내에 세대분가를 하였음에도 처분청이
+														여동생의 결혼 전에 세대분가를 하였다는 이유로 당초 과세 면제한 이건 자동차에 대하여 취득세 등을 추징한 것은 부당하므로
+														○○구청장이 신청인에게 과세한 취득세 등의 부과처분을 취소하여 주시기 바랍니다.
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 민원처리에 관한 법률 팝업 -->
+				<div class="dimlayer_z fulltype" id="deptail_pop01" data-closefocus="#btn_complaint_call">
+					<div class="fullpop_dim"></div>
+					<div class="fullpop_item">
+						<div class="fullpop_titlow">
+							<h4 class="fullpop_title">민원처리에 관한 법률<span class="fullpop_tsub">(홈페이지안내, 제5조, 제21조, 제23조)</span></h4>
+						</div>
+						<div class="fullpop_contlow" tabindex="0">
+							<div class="fullpop_contlow_in">
+								<ul class="text_bullet_vlist">
+									<li>
+										<p class="cir_bullet_para">홈페이지 게시판 사용 안내</p>
+										<div class="tb_blcont">
+											<p class="tb_normal_para">욕설 등 저속한 표현, 특정인에 대한 비방, 정치적 목적이나 성향이 있는 내용 등 서울시정과 무관한 민원은 민원처리에 관한 법률 제5조, 제21조에
+												의해
+												미답변 처리될 수 있으며 동일인 또는 동일인이라고 인정되는 자가 같은 내용을 3회 이상 반복적으로 제출하는 경우에는 제23조에 의해 종결 처리될 수
+												있습니다.</p>
+										</div>
+									</li>
+									<li>
+										<p class="cir_bullet_para">제5조(민원인의 권리와 의무)</p>
+										<div class="tb_blcont">
+											<ul class="indent_vlist">
+												<li>
+													<span class="indent_bullet">①</span>
+													<div class="indent_text">민원인은 행정기관에 민원을 신청하고 신속·공정·친절·적법한 응답을 받을 권리가 있다.</div>
+												</li>
+												<li>
+													<span class="indent_bullet">②</span>
+													<div class="indent_text">민원인은 민원을 처리하는 담당자의 적법한 민원처리를 위한 요청에 협조하여야 하고, 행정기관에 부당한 요구를 하거나 다른 민원인에 대한
+														민원
+														처리를 지연시키는 등 공무를 방해하는 행위를 하여서는 아니 된다.</div>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p class="cir_bullet_para">제21조(민원 처리의 예외)</p>
+										<div class="tb_blcont">
+											<p class="tb_normal_para">행정기관의 장은 접수된 민원(법정민원을 제외한다. 이하 이 조에서 같다)이 다음 각 호의 어느 하나에 해당하는 경우에는 그 민원을 처리하지 아니할
+												수 있다. 이 경우 그 사유를 해당 민원인에게 통지하여야 한다.</p>
+											<ul class="indent_vlist blcont_sub">
+												<li>
+													<span class="indent_bullet">1.</span>
+													<div class="indent_text">고도의 정치적 판단을 요하거나 국가기밀 또는 공무상 비밀에 관한 사항</div>
+												</li>
+												<li>
+													<span class="indent_bullet">2.</span>
+													<div class="indent_text">수사, 재판 및 형집행에 관한 사항 또는 감사원의 감사가 착수된 사항</div>
+												</li>
+												<li>
+													<span class="indent_bullet">3.</span>
+													<div class="indent_text">행정심판, 행정소송, 헌법재판소의 심판, 감사원의 심사청구, 그 밖에 다른 법률에 따라 불복구제절차가 진행 중인 사항</div>
+												</li>
+												<li>
+													<span class="indent_bullet">4.</span>
+													<div class="indent_text">법령에 따라 화해·알선·조정·중재 등 당사자 간의 이해 조정을 목적으로 행하는 절차가 진행 중인 사항</div>
+												</li>
+												<li>
+													<span class="indent_bullet">5.</span>
+													<div class="indent_text">판결·결정·재결·화해·조정·중재 등에 따라 확정된 권리관계에 관한 사항</div>
+												</li>
+												<li>
+													<span class="indent_bullet">6.</span>
+													<div class="indent_text">감사원이 감사위원회의의 결정을 거쳐 행하는 사항</div>
+												</li>
+												<li>
+													<span class="indent_bullet">7.</span>
+													<div class="indent_text">각급 선거관리위원회의 의결을 거쳐 행하는 사항</div>
+												</li>
+												<li>
+													<span class="indent_bullet">8.</span>
+													<div class="indent_text">사인 간의 권리관계 또는 개인의 사생활에 관한 사항</div>
+												</li>
+												<li>
+													<span class="indent_bullet">9.</span>
+													<div class="indent_text">행정기관의 소속 직원에 대한 인사행정상의 행위에 관한 사항</div>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p class="cir_bullet_para">제23조(반복 및 중복 민원의 처리)</p>
+										<div class="tb_blcont">
+											<ul class="indent_vlist">
+												<li>
+													<span class="indent_bullet">①</span>
+													<div class="indent_text">행정기관의 장은 민원인이 동일한 내용의 민원(법정민원을 제외한다. 이하 이 조에서 같다)을 정당한 사유 없이 3회 이상 반복하여 제출한
+														경우에는 2회
+														이상 그 처리결과를 통지하고, 그 후에 접수되는 민원에 대하여는 종결처리할 수 있다.</div>
+												</li>
+												<li>
+													<span class="indent_bullet">②</span>
+													<div class="indent_text">행정기관의 장은 민원인이 2개 이상의 행정기관에 제출한 동일한 내용의 민원을 다른 행정기관</div>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="btn_layerclose" title="민원처리에 관한 법률 팝업 닫기"></button>
+					</div>
+				</div>
+				<!-- 
+					<script>
+						dimLayerShow({"target" : "#deptail_pop01"}); // show
+						dimLayerHide({"target" : "#deptail_pop01"}); // hide
+					</script>
+				 -->
+				<script>
+					$(function() {
+						// tab
+						subContentsTabFunc("#contents_hlist", "#contents_group");
+					});
+					$(window).on("load", function() {
+						scrollTab("#scroll_ui");
+					})
+					mobileMenuRock("#mbgnb01_11"); // 모바일 락
+				</script>
+			</div>
+		</section>
+
+		<!-- footer_wrap 220724 수정 -->
+		<footer class="footer_wrap">
+			<div class="footer_inner">
+				<div class="ftg_hitem_fzone">
+					<div class="ftv_hitem_fxwrap">
+						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원편람 바로가기">민원편람</a></div>
+						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="무인민원발급기 위치 바로가기">무인민원발급기 위치</a></div>
+						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="온라인 민원발급 바로가기">온라인 민원발급</a></div>
+						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원 안내관 바로가기">민원 안내관</a></div>
+						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="응답소 민원 통계 바로가기">응답소 민원 통계</a></div>
+						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원공개사례 바로가기">민원공개사례</a></div>
+					</div>
+				</div>
+				<div class="ftv_banner_wrap">
+					<script>
+						$(function() {
+							// footer random
+							var random_data = [{
+									src: "./images/temp/banner_footer_pc.png",
+									alt: "[개발연동]대체텍스트01"
+								},
+								{
+									src: "./images/temp/banner_footer_pc_02.png",
+									alt: "[개발연동]대체텍스트02"
+								},
+								{
+									src: "./images/temp/banner_footer_pc_03.png",
+									alt: "[개발연동]대체텍스트03"
+								},
+								{
+									src: "./images/temp/banner_footer_pc_04.png",
+									alt: "[개발연동]대체텍스트04"
+								},
+								{
+									src: "./images/temp/banner_footer_pc_05.png",
+									alt: "[개발연동]대체텍스트05"
+								}
+							]
+							var randomNumber = Math.floor(Math.random() * random_data.length);
+							$("#randomBanner").append("<img src='" + random_data[randomNumber].src + "' alt='" + random_data[randomNumber].alt + "' />")
+						});
+					</script>
+					<a href="#" class="ftv_banner" id="randomBanner"></a>
+				</div>
+				<div class="ftvitem_fxwrap">
+					<div class="ftvitem_left">
+						<ul class="ftsns_hlist">
+							<li><a href="https://www.facebook.com/seoul.kr" title="서울시 페이스북 새창열기" class="ftsns ftsns01" target="_blank"><span class="hdtext">facebook</span></a></li>
+							<li><a href="https://twitter.com/seoulmania" title="서울시 트위터 새창열기" class="ftsns ftsns02" target="_blank"><span class="hdtext">twitter</span></a></li>
+							<li><a href="http://blog.naver.com/haechiseoul/" title="서울시 블로그 새창열기" class="ftsns ftsns03" target="_blank"><span class="hdtext">blog</span></a></li>
+							<li><a href="http://instagram.com/seoul_official" title="인스타그램 새창열기" class="ftsns ftsns04" target="_blank"><span class="hdtext">Instagram</span></a></li>
+							<li><a href="http://tv.seoul.go.kr" title="라이브 서울 새창열기" class="ftsns ftsns05" target="_blank"><span class="hdtext">라이브서울</span></a></li>
+						</ul>
+					</div>
+					<div class="ftvitem_right">
+						<div class="related_area">
+							<select title="유관사이트 선택" class="friend_site" id="friend_site">
+								<option value="" selected="selected">유관사이트 바로가기</option>
+								<option value="http://democracy.seoul.go.kr/front/index.do">민주주의서울</option>
+								<option value="https://120dasan.or.kr/dsnc/main/main.do">120다산콜재단</option>
+								<option value="http://seoulcitizenshall.kr">서울 시민청</option>
+								<option value="http://mediahub.seoul.go.kr/">내손안에 서울</option>
+								<option value="https://www.epeople.go.kr">국민신문고</option>
+							</select>
+							<a href="javascript:;" title="사이트 바로가기(새창열기)" class="btn_related_go">GO</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer_main_wrap">
+					<div class="ftv_bot_wrap">
+						<div class="fbot_logo_cell"><span class="fbot_logo"><span class="hdtext">I&middot;SEOUL&middot;U 너와 나의 서울</span></span></div>
+						<div class="fcopy_cell">
+							<!-- pc menu -->
+							<ul class="ftmenu_hlist">
+								<li><a href="#" class="ftmenu">응답소란?</a></li>
+								<li><a href="#" class="ftmenu type2">개인정보처리방침</a></li>
+								<li><a href="#" class="ftmenu">홈페이지 바로잡기</a></li>
+							</ul>
+							<!-- // pc menu -->
+							<div class="ftcopy_w">
+								<p class="ftcopy">서울특별시청 (04524) 서울특별시 중구 세종대로 110</p>
+								<ul class="ftcopy_fxwrap">
+									<li>문의 : 02)120</li>
+									<li>응답소 홈페이지 이용방법 문의 : 시민봉사담당관 02)2133-7935</li>
+								</ul>
+								<p class="ftcopy_sub">© Seoul Metropolitan Government. All rights reserved.</p>
+							</div>
+						</div>
+						<div class="fsub_else_cell">
+							<a href="#" target="_blank" title="새창" class="foot_ismsp"><span class="hdtext">정보보호 및 개인정보보호 관리치계 인증 ISMS*P Personal information &amp; Information Security Management System</span></a>
+							<a href="#" target="_blank" title="새창" class="foot_webacc"><span class="hdtext">과학기술정보통신부 WA WEB ACCESSIBILITY (사)한국시각장애인협회 한국웹접근성평가센터</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- // footer_wrap 220724 수정 -->
+	</div>
+</body>
+
+</html>

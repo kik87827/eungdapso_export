@@ -539,11 +539,52 @@
 	</div>
 	</section>
 
-	<!-- footer_wrap -->
+	<!-- footer_wrap 220724 수정 -->
 	<footer class="footer_wrap">
-		<div class="ftvitem01_wrap">
-			<div class="ftvitem01_fxin">
-				<div class="ftvitem01_left">
+		<div class="footer_inner">
+			<div class="ftg_hitem_fzone">
+				<div class="ftv_hitem_fxwrap">
+					<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원편람 바로가기">민원편람</a></div>
+					<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="무인민원발급기 위치 바로가기">무인민원발급기 위치</a></div>
+					<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="온라인 민원발급 바로가기">온라인 민원발급</a></div>
+					<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원 안내관 바로가기">민원 안내관</a></div>
+					<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="응답소 민원 통계 바로가기">응답소 민원 통계</a></div>
+					<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원공개사례 바로가기">민원공개사례</a></div>
+				</div>
+			</div>
+			<div class="ftv_banner_wrap">
+				<script>
+					$(function() {
+						// footer random
+						var random_data = [{
+								src: "./images/temp/banner_footer_pc.png",
+								alt: "[개발연동]대체텍스트01"
+							},
+							{
+								src: "./images/temp/banner_footer_pc_02.png",
+								alt: "[개발연동]대체텍스트02"
+							},
+							{
+								src: "./images/temp/banner_footer_pc_03.png",
+								alt: "[개발연동]대체텍스트03"
+							},
+							{
+								src: "./images/temp/banner_footer_pc_04.png",
+								alt: "[개발연동]대체텍스트04"
+							},
+							{
+								src: "./images/temp/banner_footer_pc_05.png",
+								alt: "[개발연동]대체텍스트05"
+							}
+						]
+						var randomNumber = Math.floor(Math.random() * random_data.length);
+						$("#randomBanner").append("<img src='" + random_data[randomNumber].src + "' alt='" + random_data[randomNumber].alt + "' />")
+					});
+				</script>
+				<a href="#" class="ftv_banner" id="randomBanner"></a>
+			</div>
+			<div class="ftvitem_fxwrap">
+				<div class="ftvitem_left">
 					<ul class="ftsns_hlist">
 						<li><a href="https://www.facebook.com/seoul.kr" title="서울시 페이스북 새창열기" class="ftsns ftsns01" target="_blank"><span class="hdtext">facebook</span></a></li>
 						<li><a href="https://twitter.com/seoulmania" title="서울시 트위터 새창열기" class="ftsns ftsns02" target="_blank"><span class="hdtext">twitter</span></a></li>
@@ -552,7 +593,7 @@
 						<li><a href="http://tv.seoul.go.kr" title="라이브 서울 새창열기" class="ftsns ftsns05" target="_blank"><span class="hdtext">라이브서울</span></a></li>
 					</ul>
 				</div>
-				<div class="ftvitem01_right">
+				<div class="ftvitem_right">
 					<div class="related_area">
 						<select title="유관사이트 선택" class="friend_site" id="friend_site">
 							<option value="" selected="selected">유관사이트 바로가기</option>
@@ -566,31 +607,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="ftvitem02_wrap">
-			<div class="ftvitem02_fxin">
-				<div class="ftg_hitem_fzone">
-					<div class="ftv_hitem_fxwrap">
-						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원편람 바로가기">민원편람</a></div>
-						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="무인민원발급기 위치 바로가기">무인민원발급기 위치</a></div>
-						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="온라인 민원발급 바로가기">온라인 민원발급</a></div>
-						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원 안내관 바로가기">민원 안내관</a></div>
-						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="응답소 민원 통계 바로가기">응답소 민원 통계</a></div>
-						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원공개사례 바로가기">민원공개사례</a></div>
-					</div>
-				</div>
-				<div class="ftv_banner_wrap">
-					<a href="#" class="ftv_banner"><img src="./images/temp/banner_footer_pc.png" alt="[개발연동]대체텍스트"></a>
-				</div>
-				<!-- mobile menu -->
-				<div class="mbftmenu_hlist_w">
-					<ul class="mbftmenu_hlist">
-						<li><a href="#" class="mbftmenu">응답소란?</a></li>
-						<li><a href="#" class="mbftmenu type2">개인정보처리방침</a></li>
-						<li><a href="#" class="mbftmenu">홈페이지 바로잡기</a></li>
-					</ul>
-				</div>
-				<!-- mobile menu -->
+			<div class="footer_main_wrap">
 				<div class="ftv_bot_wrap">
 					<div class="fbot_logo_cell"><span class="fbot_logo"><span class="hdtext">I&middot;SEOUL&middot;U 너와 나의 서울</span></span></div>
 					<div class="fcopy_cell">
@@ -618,7 +635,7 @@
 			</div>
 		</div>
 	</footer>
-	<!-- // footer_wrap -->
+	<!-- // footer_wrap 220724 수정 -->
 	</div>
 </body>
 
