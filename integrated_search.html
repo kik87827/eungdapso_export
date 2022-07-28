@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="천만 서울시민의 의견을 접수받는 온라인 민원신청 창구입니다. 민원신청 종류는 생활불편, 건의, 질의 민원과 더불어 인권침해, 민생침해 등 다양한 시민의 소리를 접수하고 처리합니다.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="./images/logo_icon_114.png">
+	<link rel="apple-touch-icon" href="./images/logo_icon_114.png">
+	<link href="./css/reset.css" rel="stylesheet">
+	<link href="./css/layout.css" rel="stylesheet">
+	<link href="./css/swiper.min.css" rel="stylesheet">
+	<link href="./css/jqueryui.css" rel="stylesheet">
+	<link href="./css/contents.css" rel="stylesheet">
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery.cookie.js"></script>
+	<script src="./js/hoverIntent.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/iscroll.js"></script>
+	<script src="./js/front.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<title>통합검색 | 응답소</title>
+</head>
+
+<body class="front_body">
+	<!-- skip menu -->
+	<ul class="skiplist">
+		<li class="skip pc_skip"><a href="#gnb">주메뉴 바로가기</a></li>
+		<li class="skip mb_skip"><a href="#mobile_gnb">주메뉴 바로가기</a></li>
+		<li class="skip"><a href="#content">본문내용으로 바로가기</a></li>
+	</ul>
+	<!-- //skip menu -->
+	<div class="page_wrap">
+		<!-- header_wrap  -->
+		<header class="header_wrap">
+			<!-- 서울시 연동 -->
+			<div class="head_linkage_zone">
+				<!-- 연동영역 더미코딩 -->
+				<div style="background:#1085e5;height:48px;display:flex;align-items:center;justify-content: center;color:#fff;font-size:16px;line-height:1;" id="temp_header">서울시 연동영역</div>
+				<style>
+					@media (max-width:1023px) {
+						#temp_header {
+							height: 30px !important;
+							font-size: 14px !important;
+						}
+					}
+				</style>
+				<!-- // 연동영역 더미코딩 -->
+			</div>
+			<!-- // 서울시 연동 -->
+			<div class="head_group">
+				<!-- mobile -->
+				<a href="#" class="btn_mbmenucall"><span class="btn_mbmenucall_in"></span><span class="hdtext">메인메뉴 열기</span></a>
+				<div class="mobile_mainmenu_zone">
+					<div class="mainmenu_dim"></div>
+					<div class="mobile_mainmenu_wrap" id="mobile_gnb">
+						<div class="mbutil_low">
+							<span class="mbmenu_logo"><span class="hdtext">응답소</span></span>
+							<div class="mbutil_hlist_w">
+								<ul class="mbutil_hlist">
+
+
+									<!-- 로그인 전 -->
+									<li><a href="#" class="mbutil">회원가입</a></li>
+									<li><a href="#" class="mbutil">로그인</a></li>
+									<!-- // 로그인 전 -->
+
+								</ul>
+							</div>
+						</div>
+						<div class="mbmenu_low">
+							<div class="mbmenu_isc">
+								<ul class="mbmenu_vlist">
+									<li id="mb_gnb01">
+										<a href="#" class="mbmenu_one">민원신청</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb01_01"><a href="#" class="mbmenu_two">시정일반 질의ㆍ건의</a></li>
+												<li id="mbgnb01_02"><a href="#" class="mbmenu_two">코로나19 방역수칙 위반 신고센터</a></li>
+												<li id="mbgnb01_03"><a href="#" class="mbmenu_two">코로나19 백신접종 신고</a></li>
+												<li id="mbgnb01_04"><a href="#" class="mbmenu_two">시장에게 바란다</a></li>
+												<li id="mbgnb01_05"><a href="#" class="mbmenu_two">시장 핫라인(공익제보)</a></li>
+												<li id="mbgnb01_06"><a href="#" class="mbmenu_two">투자출연기관 비리신고</a></li>
+												<li id="mbgnb01_07"><a href="#" class="mbmenu_two">하도급 부조리 신고</a></li>
+												<li id="mbgnb01_08"><a href="#" class="mbmenu_two">인권침해 구제신청</a></li>
+												<li id="mbgnb01_09"><a href="#" class="mbmenu_two">민생침해신고(눈물그만)</a></li>
+												<li id="mbgnb01_10"><a href="#" class="mbmenu_two">노동조사신고</a></li>
+												<li id="mbgnb01_11"><a href="#" class="mbmenu_two">지방세 이의신청</a></li>
+												<li id="mbgnb01_12"><a href="#" class="mbmenu_two">성평등 노동조사신고</a></li>
+												<li id="mbgnb01_14"><a href="#" class="mbmenu_two">적극행정 국민신청 제도</a></li>
+												<li id="mbgnb01_13"><a href="#" class="mbmenu_two define_blank" title="새창" target="_blank">공직비리 익명신고</a></li>
+											</ul>
+										</div>
+									</li>
+									<li id="mb_gnb02">
+										<a href="#" class="mbmenu_one">민원결과</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb02_01"><a href="#" class="mbmenu_two">응답소 민원결과</a></li>
+												<li id="mbgnb02_02"><a href="#" class="mbmenu_two">120 민원결과</a></li>
+												<li id="mbgnb02_03"><a href="#" class="mbmenu_two">SNS 민원결과</a></li>
+												<li id="mbgnb02_04"><a href="#" class="mbmenu_two">방문ㆍ서신ㆍ유선 민원결과</a></li>
+												<li id="mbgnb02_05"><a href="#" class="mbmenu_two">국민신문고 민원결과</a></li>
+												<li id="mbgnb02_06"><a href="#" class="mbmenu_two">방문 신청한 서식민원 조회</a></li>
+											</ul>
+										</div>
+									</li>
+									<li id="mb_gnb03">
+										<a href="#" class="mbmenu_one">민원사례</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb03_01"><a href="#" class="mbmenu_two">자주 찾는 민원사례</a></li>
+												<li id="mbgnb03_02"><a href="#" class="mbmenu_two">민원 공개사례</a></li>
+												<li id="mbgnb03_03"><a href="#" class="mbmenu_two">민원서비스 우수사례</a></li>
+											</ul>
+										</div>
+									</li>
+									<li id="mb_gnb04">
+										<a href="#" class="mbmenu_one">정보</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb04_01"><a href="#" class="mbmenu_two">민원편람</a></li>
+												<li id="mbgnb04_02"><a href="#" class="mbmenu_two">무인민원발급기 위치</a></li>
+												<li id="mbgnb04_03"><a href="#" class="mbmenu_two">위원회 협의 내용 조회</a></li>
+												<li id="mbgnb04_04"><a href="#" class="mbmenu_two">행정서비스 헌장</a></li>
+												<li id="mbgnb04_05"><a href="#" class="mbmenu_two">응답소 민원 통계</a></li>
+											</ul>
+										</div>
+									</li>
+									<li id="mb_gnb05">
+										<a href="#" class="mbmenu_one">고객소통센터</a>
+										<div class="mbmenu_two_vlist_w">
+											<ul class="mbmenu_two_vlist">
+												<li id="mbgnb05_01"><a href="#" class="mbmenu_two">공지사항</a></li>
+												<li id="mbgnb05_02"><a href="#" class="mbmenu_two">SNS 긴급메시지</a></li>
+												<li id="mbgnb05_03"><a href="#" class="mbmenu_two">자주 묻는 질문</a></li>
+												<li id="mbgnb05_04"><a href="#" class="mbmenu_two">찾아가는 서울시청</a></li>
+												<li id="mbgnb05_05"><a href="#" class="mbmenu_two">민원안내관</a></li>
+												<li id="mbgnb05_06"><a href="#" class="mbmenu_two">응답소란</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="btn_mbmenuclose"><span class="hdtext">메인메뉴 닫기</span></a>
+					</div>
+				</div>
+				<!-- // mobile -->
+				<div class="pix_in">
+					<div class="header_both">
+						<div class="header_cell head_left">
+							<h1 class="header_toplogo"><a href="#" class="toplogo_link"><span class="hdtext">응답소</span></a></h1>
+						</div>
+						<div class="header_cell head_right">
+							<div class="headgnb_list_wrap" id="gnb">
+								<ul class="headgnb_list">
+									<li>
+										<a href="#" class="hgm">민원신청</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">시정일반 질의ㆍ건의</a></li>
+												<li><a href="#" class="htm">코로나19 방역수칙 위반 신고센터</a></li>
+												<li><a href="#" class="htm">코로나19 백신접종 신고</a></li>
+												<li><a href="#" class="htm">시장에게 바란다</a></li>
+												<li><a href="#" class="htm">시장 핫라인(공익제보)</a></li>
+												<li><a href="#" class="htm">투자출연기관 비리신고</a></li>
+												<li><a href="#" class="htm">하도급 부조리 신고</a></li>
+												<li><a href="#" class="htm">인권침해 구제신청</a></li>
+												<li><a href="#" class="htm">민생침해신고(눈물그만)</a></li>
+												<li><a href="#" class="htm">노동조사신고</a></li>
+												<li><a href="#" class="htm">지방세 이의신청</a></li>
+												<li><a href="#" class="htm">성평등 노동조사신고</a></li>
+												<li><a href="#" class="htm">적극행정 국민신청 제도</a></li>
+												<li><a href="#" class="htm">공직비리 익명신고</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="hgm">민원결과</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">응답소 민원결과</a></li>
+												<li><a href="#" class="htm">120 민원결과</a></li>
+												<li><a href="#" class="htm">SNS 민원결과</a></li>
+												<li><a href="#" class="htm">방문ㆍ서신ㆍ유선 민원결과</a></li>
+												<li><a href="#" class="htm">국민신문고 민원결과</a></li>
+												<li><a href="#" class="htm">방문 신청한 서식민원 조회</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="hgm">민원사례</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">자주 찾는 민원사례</a></li>
+												<li><a href="#" class="htm">민원 공개사례</a></li>
+												<li><a href="#" class="htm">민원서비스 우수사례</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="hgm">정보</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">민원편람</a></li>
+												<li><a href="#" class="htm">무인민원발급기 위치</a></li>
+												<li><a href="#" class="htm">위원회 협의 내용 조회</a></li>
+												<li><a href="#" class="htm">행정서비스 헌장</a></li>
+												<li><a href="#" class="htm">응답소 민원 통계</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="hgm">고객소통센터</a>
+										<div class="htm_vlist_w">
+											<ul class="htm_vlist">
+												<li><a href="#" class="htm">공지사항</a></li>
+												<li><a href="#" class="htm">SNS 긴급메시지</a></li>
+												<li><a href="#" class="htm">자주 묻는 질문</a></li>
+												<li><a href="#" class="htm">찾아가는 서울시청</a></li>
+												<li><a href="#" class="htm">민원안내관</a></li>
+												<li><a href="#" class="htm">응답소란</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="headelse_list_wrap">
+								<div class="headelse_list_in">
+									<ul class="util_list">
+
+
+										<!-- 로그인 전 -->
+										<li><a href="#" class="util hasico ico_01"><span class="util_ein">로그인</span></a></li>
+										<li><a href="#" class="util"><span class="util_ein">회원가입</span></a></li>
+										<!-- // 로그인 전 -->
+
+
+									</ul>
+								</div>
+								<!-- [2차전달] 220419 HTML 변경 -->
+								<div class="headgnb_search_w">
+									<a href="javascript:;" class="btn_headsearch" data-closeText="검색창 닫기">
+										<span class="hdtext opencase">검색</span>
+									</a>
+								</div>
+								<!-- // [2차전달] 220419 HTML 변경 -->
+							</div>
+						</div>
+					</div>
+					<div class="gnb_depbg"></div>
+				</div>
+			</div>
+			<!-- 검색 레이어 -->
+			<div class="search_toplayer">
+				<div class="search_topfield_w">
+					<div class="search_topfield">
+						<label for="search_topitem" class="hdtext">검색어 입력</label>
+						<input type="text" id="search_topitem" class="search_topinput" title="검색어 입력" placeholder="검색어를 입력해주세요.">
+						<a href="javascript:;" class="btn_topsearch_submit" title="검색"><span class="hdtext">검색</span></a>
+					</div>
+					<div class="search_keyword_low">
+						<div class="top_keyword_label_w"><span class="top_keyword_label">이슈검색어</span></div>
+						<ul class="top_keyword_flist">
+							<li><a href="javascript:;" class="top_keyword">#이관민원 조회</a></li>
+							<li><a href="javascript:;" class="top_keyword">#백신접종장소</a></li>
+							<li><a href="javascript:;" class="top_keyword">#코로나19 QnA</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- // 검색 레이어 -->
+		</header>
+		<!-- // header_wrap -->
+		<section class="mid_contents">
+			<!-- submap -->
+			<div class="submap_zone_parent">
+				<div class="submap_zone">
+					<div class="sub_map_pixin">
+						<a href="/" class="sub_map_home"><span class="hdtext">홈</span></a>
+						<div class="sub_map_fxwrap">
+							<div class="sub_map_fxitem">
+								<div class="sub_map_toggle_wrap">
+									<span class="map_toggle_current not_toggle">통합검색</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // submap -->
+			<div class="subcont_zone d_totalsearch_ui" id="content">
+				<!-- subdep2_vobj_zone -->
+				<div class="subdep2_vobj_zone">
+					<h2 class="subdep2_vtitle">통합검색</h2>
+					<div class="sctab_hlist_z">
+						<div class="sctab_hlist_w">
+							<ul class="sctab_hlist" id="total_tab">
+								<li class="active"><a href="#" class="sctab d_top">전체<br class="mb_br">(12,235)</a></li>
+								<li><a href="#result_cont01" class="sctab">메뉴<br class="mb_br">(35)</a></li>
+								<li><a href="#result_cont02" class="sctab">웹페이지<br class="mb_br">(10,000)</a></li>
+								<li><a href="#result_cont03" class="sctab">민원사례<br class="mb_br">(100건)</a></li>
+								<li><a href="#result_cont04" class="sctab">자주 묻는질문<br class="mb_br">(120)</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- // subdep2_vobj_zone -->
+				<div class="sctab_contents" id="total_contents">
+					<div class="sortfield_box dtype2">
+						<fieldset class="sf_low define_searchform">
+							<legend>검색</legend>
+							<div class="searchform_fxwrap pixtype4">
+								<div class="sfhitem define_select">
+									<select class="form_select ready_select" title="통합검색 키워드 선택">
+										<option value="0">선택하세요</option>
+										<option value="1">제목</option>
+										<option value="2">내용</option>
+										<option value="3">머릿말</option>
+									</select>
+								</div>
+								<div class="sfhitem define_form">
+									<label for="search_item" class="hdtext">검색어 입력</label>
+									<input type="text" id="search_item" class="sfinput" title="검색어 입력" placeholder="검색어를 입력해주세요." value="신고센터">
+									<a href="javascript:;" class="btn_sfsubmit" title="검색"><span class="hdtext">검색</span></a>
+								</div>
+							</div>
+						</fieldset>
+						<div class="sort_guide_copy_low">
+							<p class="sort_guide_copy">게시글 검색결과 <strong class="b_emp">신고센터</strong>에 대한 <strong class="c_emp">12,235건</strong>의 검색결과가 있습니다.</p>
+						</div>
+					</div>
+					<!-- result -->
+					<div class="total_result_item_wrap">
+						<div class="total_result_item" id="result_cont01">
+							<div class="total_result_title_wrap">
+								<h3 class="total_result_title">메뉴(총 <strong class="c_emp">35</strong>건)</h3>
+							</div>
+							<div class="total_result_content">
+								<ul class="total_result_menu_list">
+									<li>
+										<a href="#" class="total_result_menu">
+											<ul class="inline_depth_list">
+												<li><span class="inline_depth_menu">응답소홈페이지</span></li>
+												<li><span class="inline_depth_menu">민원신청</span></li>
+												<li><span class="inline_depth_menu">코로나19 방역수칙 위반 신고센터</span></li>
+											</ul>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="total_result_menu">
+											<ul class="inline_depth_list">
+												<li><span class="inline_depth_menu">응답소홈페이지</span></li>
+												<li><span class="inline_depth_menu">민원신청</span></li>
+												<li><span class="inline_depth_menu">코로나19 백신접종 신고센터</span></li>
+											</ul>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="total_result_menu">
+											<ul class="inline_depth_list">
+												<li><span class="inline_depth_menu">응답소홈페이지</span></li>
+												<li><span class="inline_depth_menu">민원신청</span></li>
+												<li><span class="inline_depth_menu">하도급부조리 신고</span></li>
+											</ul>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<a href="javascript:;" class="btn_morebox"><span class="hdtext">메뉴(총 35건) 더보기</span></a>
+						</div>
+						<div class="total_result_item" id="result_cont02">
+							<div class="total_result_title_wrap">
+								<h3 class="total_result_title">웹페이지(총 <strong class="c_emp">10,000</strong>건)</h3>
+							</div>
+							<div class="total_result_content">
+								<ul class="total_result_data_list">
+									<li>
+										<a href="#" class="total_result_data_item">
+											<div class="result_main_title">
+												<span class="main_title_text">응답소 <span class="b_emp">신고센터</span> 위촉식 및 오리엔테이션 (2016.3.18)</span>
+											</div>
+											<div class="result_sub_text">
+												서울시 및 25개 자치구, 서울시 사업소 및 산하기관의 업무는 응답소 시스템을 통해 답변드리고 있으며, 서울시 이외의 민원은 정부부처, 타 지방 자치단체, 공공기관 등 해당 기관으로 이송 처리됩니다 하도급 부조리 <span class="b_emp">신고센터</span>를 운영하고 있으니, 하도급 부조리 발생 시 적극 신고하시기 바랍니다. 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트
+											</div>
+											<ul class="origin_menu_list">
+												<li><span class="origin_menu">응답소홈페이지</span></li>
+												<li><span class="origin_menu">민원신청</span></li>
+												<li><span class="origin_menu">하도급 부조리 신고</span></li>
+											</ul>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="total_result_data_item">
+											<div class="result_main_title">
+												<span class="main_title_text">코로나 19 방역수칙 위반<span class="b_emp">신고센터</span></span>
+											</div>
+											<div class="result_sub_text">
+												서울시 및 25개 자치구, 서울시 사업소 및 산하기관의 업무는 응답소 시스템을 통해 답변드리고 있으며, 서울시 이외의 민원은 정부부처, 타 지방 자치단체, 공공기관 등 해당 기관으로 이송 처리됩니다 하도급 부조리 <span class="b_emp">신고센터</span> 를 운영하고 있으니, 하도급 부조리 발생 시 적극 신고하시기 바랍니다. 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트
+											</div>
+											<ul class="origin_menu_list">
+												<li><span class="origin_menu">응답소홈페이지</span></li>
+												<li><span class="origin_menu">민원신청</span></li>
+												<li><span class="origin_menu">노동조사신고</span></li>
+											</ul>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<a href="javascript:;" class="btn_morebox"><span class="hdtext">웹페이지(총 10,000건) 더보기</span></a>
+						</div>
+						<div class="total_result_item" id="result_cont03">
+							<div class="total_result_title_wrap">
+								<h3 class="total_result_title">민원사례(총 <strong class="c_emp">100</strong>건)</h3>
+							</div>
+							<div class="total_result_content">
+								<ul class="total_result_data_list">
+									<li>
+										<a href="#" class="total_result_data_item">
+											<div class="result_main_title">
+												<span class="main_title_text">코로나19 방역수칙 위반 <span class="b_emp">신고센터</span> 통한 익명신고 안되는 이유 문의 테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트</span>
+												<span class="main_title_date">2022-02-01</span>
+											</div>
+											<div class="result_sub_text">
+												안녕하십니까. 서울시 응답소에 관심을 가져주셔서 감사합니다. 귀하께서 서울시 응답소 홈페이지를 통해 신청해주신 민원에 대한 답변을 드리겠습니다. 귀하께서는 코로나19 방역수칙 위반 <span class="b_emp">신고센터</span>를 통한 신고 접수 시 익명신고가 안되는 이유에 대해 문의해주셨습니다
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="total_result_data_item">
+											<div class="result_main_title">
+												<span class="main_title_text">코로나 19 방역수칙 위반<span class="b_emp">신고센터</span></span>
+												<span class="main_title_date">2022-02-01</span>
+											</div>
+											<div class="result_sub_text">
+												아울러 오토바이 출입과 같은 공원 내 불법사항을 목격하실 경우 능산공원 내 <span class="b_emp">신고센터</span>로 바로 신고주시면 빠른 단속이 가능하니 공원 이용에 참고 부탁드리며, 기타 불편하신 사항이나 문의사항이 있으실 경우 공원녹지과(☎2094-2362)로 연락주시기 바랍니다. 귀하의 가정에 건강과 행운이 가득하기를 기원합니다. 감사합니다.
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<a href="javascript:;" class="btn_morebox"><span class="hdtext">민원사례(총 100건) 더보기</span></a>
+						</div>
+						<div class="total_result_item" id="result_cont04">
+							<div class="total_result_title_wrap">
+								<h3 class="total_result_title">자주 묻는 질문(총 <strong class="c_emp">120</strong>건)</h3>
+							</div>
+							<div class="total_result_content">
+								<ul class="total_result_data_list">
+									<li>
+										<a href="#" class="total_result_data_item">
+											<div class="result_main_title">
+												<span class="main_title_text">코로나19 방역수칙 위반 <span class="b_emp">신고센터</span> 통한 익명신고 안되는 이유 문의</span>
+												<span class="main_title_date">2022-02-01</span>
+											</div>
+											<div class="result_sub_text">
+												안녕하십니까. 서울시 응답소에 관심을 가져주셔서 감사합니다. 귀하께서 서울시 응답소 홈페이지를 통해 신청해주신 민원에 대한 답변을 드리겠습니다. 귀하께서는 코로나19 방역수칙 위반 <span class="b_emp">신고센터</span>를 통한 신고 접수 시 익명신고가 안되는 이유에 대해 문의해주셨습니다
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="total_result_data_item">
+											<div class="result_main_title">
+												<span class="main_title_text">코로나 19 방역수칙 위반<span class="b_emp">신고센터</span></span>
+												<span class="main_title_date">2022-02-01</span>
+											</div>
+											<div class="result_sub_text">
+												아울러 오토바이 출입과 같은 공원 내 불법사항을 목격하실 경우 능산공원 내 <span class="b_emp">신고센터</span>로 바로 신고주시면 빠른 단속이 가능하니 공원 이용에 참고 부탁드리며, 기타 불편하신 사항이나 문의사항이 있으실 경우 공원녹지과(☎2094-2362)로 연락주시기 바랍니다. 귀하의 가정에 건강과 행운이 가득하기를 기원합니다. 감사합니다.
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<a href="javascript:;" class="btn_morebox"><span class="hdtext">자주 묻는 질문(총 120건) 더보기</span></a>
+						</div>
+					</div>
+					<!-- // result -->
+				</div>
+				<script>
+					$(function() {
+						// tab
+						// subContentsTabFunc("#total_tab", "#total_contents");
+					});
+
+					$(window).on("load", function() {
+						totalsearchFunc();
+					});
+				</script>
+			</div>
+		</section>
+
+		<!-- footer_wrap 220724 수정 -->
+		<footer class="footer_wrap">
+			<div class="footer_inner">
+				<div class="ftg_hitem_fzone">
+					<div class="ftv_hitem_fxwrap">
+						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원편람 바로가기">민원편람</a></div>
+						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="무인민원발급기 위치 바로가기">무인민원발급기 위치</a></div>
+						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="온라인 민원발급 바로가기">온라인 민원발급</a></div>
+						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원 안내관 바로가기">민원 안내관</a></div>
+						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="응답소 민원 통계 바로가기">응답소 민원 통계</a></div>
+						<div class="ftv_hitem"><a href="#" class="ftv_hitem_link" title="민원공개사례 바로가기">민원공개사례</a></div>
+					</div>
+				</div>
+				<div class="ftv_banner_wrap">
+					<script>
+						$(function() {
+							// footer random
+							var random_data = [{
+									src: "./images/temp/banner_footer_pc.png",
+									alt: "[개발연동]대체텍스트01"
+								},
+								{
+									src: "./images/temp/banner_footer_pc_02.png",
+									alt: "[개발연동]대체텍스트02"
+								},
+								{
+									src: "./images/temp/banner_footer_pc_03.png",
+									alt: "[개발연동]대체텍스트03"
+								},
+								{
+									src: "./images/temp/banner_footer_pc_04.png",
+									alt: "[개발연동]대체텍스트04"
+								},
+								{
+									src: "./images/temp/banner_footer_pc_05.png",
+									alt: "[개발연동]대체텍스트05"
+								}
+							]
+							var randomNumber = Math.floor(Math.random() * random_data.length);
+							$("#randomBanner").append("<img src='" + random_data[randomNumber].src + "' alt='" + random_data[randomNumber].alt + "' />")
+						});
+					</script>
+					<a href="#" class="ftv_banner" id="randomBanner"></a>
+				</div>
+				<div class="ftvitem_fxwrap">
+					<div class="ftvitem_left">
+						<ul class="ftsns_hlist">
+							<li><a href="https://www.facebook.com/seoul.kr" title="서울시 페이스북 새창열기" class="ftsns ftsns01" target="_blank"><span class="hdtext">facebook</span></a></li>
+							<li><a href="https://twitter.com/seoulmania" title="서울시 트위터 새창열기" class="ftsns ftsns02" target="_blank"><span class="hdtext">twitter</span></a></li>
+							<li><a href="http://blog.naver.com/haechiseoul/" title="서울시 블로그 새창열기" class="ftsns ftsns03" target="_blank"><span class="hdtext">blog</span></a></li>
+							<li><a href="http://instagram.com/seoul_official" title="인스타그램 새창열기" class="ftsns ftsns04" target="_blank"><span class="hdtext">Instagram</span></a></li>
+							<li><a href="http://tv.seoul.go.kr" title="라이브 서울 새창열기" class="ftsns ftsns05" target="_blank"><span class="hdtext">라이브서울</span></a></li>
+						</ul>
+					</div>
+					<div class="ftvitem_right">
+						<div class="related_area">
+							<select title="유관사이트 선택" class="friend_site" id="friend_site">
+								<option value="" selected="selected">유관사이트 바로가기</option>
+								<option value="http://democracy.seoul.go.kr/front/index.do">민주주의서울</option>
+								<option value="https://120dasan.or.kr/dsnc/main/main.do">120다산콜재단</option>
+								<option value="http://seoulcitizenshall.kr">서울 시민청</option>
+								<option value="http://mediahub.seoul.go.kr/">내손안에 서울</option>
+								<option value="https://www.epeople.go.kr">국민신문고</option>
+							</select>
+							<a href="javascript:;" title="사이트 바로가기(새창열기)" class="btn_related_go">GO</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer_main_wrap">
+					<div class="ftv_bot_wrap">
+						<div class="fbot_logo_cell"><span class="fbot_logo"><span class="hdtext">I&middot;SEOUL&middot;U 너와 나의 서울</span></span></div>
+						<div class="fcopy_cell">
+							<!-- pc menu -->
+							<ul class="ftmenu_hlist">
+								<li><a href="#" class="ftmenu">응답소란?</a></li>
+								<li><a href="#" class="ftmenu type2">개인정보처리방침</a></li>
+								<li><a href="#" class="ftmenu">홈페이지 바로잡기</a></li>
+							</ul>
+							<!-- // pc menu -->
+							<div class="ftcopy_w">
+								<p class="ftcopy">서울특별시청 (04524) 서울특별시 중구 세종대로 110</p>
+								<ul class="ftcopy_fxwrap">
+									<li>문의 : 02)120</li>
+									<li>응답소 홈페이지 이용방법 문의 : 시민봉사담당관 02)2133-7935</li>
+								</ul>
+								<p class="ftcopy_sub">© Seoul Metropolitan Government. All rights reserved.</p>
+							</div>
+						</div>
+						<div class="fsub_else_cell">
+							<a href="#" target="_blank" title="새창" class="foot_ismsp"><span class="hdtext">정보보호 및 개인정보보호 관리치계 인증 ISMS*P Personal information &amp; Information Security Management System</span></a>
+							<a href="#" target="_blank" title="새창" class="foot_webacc"><span class="hdtext">과학기술정보통신부 WA WEB ACCESSIBILITY (사)한국시각장애인협회 한국웹접근성평가센터</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- // footer_wrap 220724 수정 -->
+	</div>
+</body>
+
+</html>

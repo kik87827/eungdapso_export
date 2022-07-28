@@ -551,20 +551,29 @@
 							<div class="vformitem_contlow">
 								<div class="respon_form">
 									<div class="respon_tr">
+										<!-- 220728 수정 -->
 										<div class="respon_hitem">
 											<div class="res_hcell resth">
-												<span class="respon_vlabel_wrap">
+												<label for="report_contents_01" class="respon_vlabel_wrap">
 													<span class="respon_vlabel">민원발생<br class="mb_br">지역</span><span class="vfc_emp">*</span>
-												</span>
+												</label>
 											</div>
 											<div class="res_hcell restd">
-												<select class="form_select ready_select" title="민원발생지역 선택" data-pcwid="204" style="width:204px">
-													<option value="0">선택</option>
-													<option value="1">지역1</option>
-													<option value="2">지역2</option>
-												</select>
+												<div class="inform_fxwrap mbtype2">
+													<div class="inform_item">
+														<select class="form_select ready_select" id="report_contents_01" data-pcwid="203" style="width:203px" title="민원발생지역 선택">
+															<option value="0">선택</option>
+															<option value="1">지역1</option>
+															<option value="2">지역2</option>
+														</select>
+													</div>
+													<div class="inform_item">
+														<input type="text" class="form_input" data-pcwid="203" style="width:203px" title="국가명 입력" placeholder="국가명을 입력하세요">
+													</div>
+												</div>
 											</div>
 										</div>
+										<!-- // 220728 수정 -->
 									</div>
 									<div class="respon_tr">
 										<div class="respon_hitem">
