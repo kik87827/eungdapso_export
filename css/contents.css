@@ -35,6 +35,7 @@
 .dark_emp{color:#3c3c3c !important;}
 .pc_br{display:block;}
 .mb_br{display:none;}
+.mb_br2{display:none;}
 .emp_med,
 .emp_med *{font-weight:500 !important;}
 .emp_bold,
@@ -212,6 +213,7 @@ input[type="checkbox"].chkrd:checked{border-color:#b14487;background-color:#b144
 }
 @media (max-width:359px){
     .mb_n{display:block !important;}
+    .mb_br2{display:block;}
 }
 /* // 공통 */
 
