@@ -40,6 +40,10 @@ function mainFunc(){
 						console.log(1)
 						$(".custom_control_layer .current_index").text(main_banner.realIndex+1);
 					}
+				},
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
 				}
 			});
 		}else{
