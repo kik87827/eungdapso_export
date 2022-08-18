@@ -22,6 +22,12 @@ function mainFunc(){
 			scrollbar: {
 				el: ".mc_quick_container .swiper-scrollbar",
 				draggable : true
+			},
+			breakpoints: {
+				// 1280px 보다 클 경우
+				1023: {
+					speed : 500
+				}
 			}
 		});
 		main_flow.on("slideChange",function(){
