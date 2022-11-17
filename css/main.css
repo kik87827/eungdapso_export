@@ -222,7 +222,8 @@ html:not(.win) .mc_indent_text{top:0;}
 .swiper-container.mc_imgthum_container .swiper-slide{}
 .swiper-container.mc_imgthum_container .swiper-slide .nodata_para{display:flex;align-items: center;justify-content: center;height:224px;font-size:16px;}
 .mc_imgthum_banner_zone.type2 .custom_control_layer{display:none;}
-.mc_link_obj{display:flex;}
+.mc_link_obj{display:flex;position:relative;}
+.mc_link_obj:focus:after{display:block;content:'';border:2px dashed #000;position:absolute;top:0;left:0;width:100%;height:100%;box-sizing: border-box;border-radius:10px;}
 .mc_link_img_cols{flex:0 0 224px;position:relative;display:flex;}
 .mc_link_img_cols:after{display:block;content:'';width:100%;height:0;padding-bottom:100%;}
 .mc_link_img_cols > img{width:100%;height:100%;object-fit: cover;object-position: 50% 50%;vertical-align: top;position:absolute;top:0;left:0;}

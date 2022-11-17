@@ -59,6 +59,10 @@ function mainFunc(){
 					}
 				},
 				effect: 'fade',
+				keyboard: {
+					enabled: true,
+					onlyInViewport: false,
+				},
 				fadeEffect: {
 					crossFade: true
 				}
@@ -66,6 +70,11 @@ function mainFunc(){
 		}else{
 			$(".mc_imgthum_banner_zone").addClass("type2");
 		}
+		main_banner.on("slideChange",function(){
+			setTimeout(function(){
+				$(".mc_imgthum_container .swiper-slide.swiper-slide-active").find(".mc_link_obj").focus();
+			},20);
+		});
 		$(".btn_custom_auto").on("click",function(e){
 			e.preventDefault();
 			var $t = $(this);
@@ -81,4 +90,22 @@ function mainFunc(){
 			}
 		});
 	}
+
+
+	var enterKeyPress = false;
+	$(window).on("keydown",function(e){
+		var keycode = e.keyCode || e.which;
+		var btn_auto = $(".btn_custom_auto");
+		if(keycode == 13){
+			enterKeyPress = true;
+		}else{
+			enterKeyPress = false;
+		}
+
+		btn_auto.addClass("type2");
+		if(btn_auto.hasClass("type2")){
+			btn_auto.children(".hdtext").text(btn_auto.attr("data-play"));
+			main_banner.autoplay.stop();
+		}
+	});
 }
