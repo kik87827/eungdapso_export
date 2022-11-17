@@ -295,11 +295,13 @@ function loginTabFunc(){
 		var $t_t = $($t.attr("href"));
 		e.preventDefault();
 		$t.siblings(".sf_intab").removeClass("active");
+		$t.siblings(".sf_intab").removeAttr("title");
 		$t.addClass("active");
 		if($t_t.length){
 			$t_t.siblings(".sf_inboxcont").removeClass("active");
 			$t_t.addClass("active");
 		}
+		$t.attr("title","선택됨");
 	});
 	$(window).on("keydown",function(e){
         clickis = false;
