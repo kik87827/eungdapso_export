@@ -584,8 +584,7 @@ input.loginput{border:1px solid #c5c9d5;border-radius:3px;box-sizing: border-box
 .btn_sctobj.dtype2{background:#404040;}
 .btn_sctobj.htype2{padding:12px 20px 13px;}
 .btn_sctobj:focus{outline:0;}
-.btn_sctobj:focus:after{display:block;content:'';width:100%;height:100%;border:3px solid #fff;border-radius:2px;position:absolute;top:2px;left:2px;width:calc(100% - 4px);height:calc(100% - 4px);box-sizing: border-box;}
-
+.btn_sctobj:focus:after{display:block;content:'';width:100%;height:100%;border:2px solid #000;border-radius:6px;position:absolute;top:-4px;left:-4px;width:calc(100% + 8px);height:calc(100% + 8px);box-sizing: border-box;}
 
 .linux .btn_sctobj.htype2{padding-bottom:12px;}
 .sct_vbox.ico_covid19{background-image:url("../images/bg_visual_sub01.png"),url("../images/obj_visual_sub02.png");}
@@ -1395,6 +1394,8 @@ input.file_input{height:42px;border:1px solid #c5c9d5;border-radius:3px;line-hei
 input.file_input:disabled{background:#f8f8f8;}
 
 .file_upload_text{display:inline-block;position:relative;z-index:1;font-size:15px;cursor:pointer;color:#b14487;font-weight:500;border:1px solid #d8a1c3;border-radius:100px;white-space: nowrap;padding:10px 20px;line-height:1;}
+input.btn_fileupload:focus + .file_upload_text{outline:0;}
+input.btn_fileupload:focus + .file_upload_text:after{display:block;content:'';width:calc(100% + 10px);height:calc(100% + 10px);position:absolute;top:-5px;left:-5px;border:2px solid #000;border-radius:100px;box-sizing: border-box;}
 .file_btn_fxcell{flex:0;position:relative;margin-left:4px;}
 input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: pointer;width:100%;height:100%;display:block;appearance: none;}
 .file_upload_item_wrap .important_text{color:#747474;margin-top:8px;line-height:1.4;}
@@ -1457,7 +1458,7 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
 .btn_bothcell .btn_bcsubmit{margin-right:5px;}
 .btn_bothcell .btn_bcsubmit:last-of-type{margin-right:0}
 .btn_bothcell:last-of-type .btn_bcsubmit{}
-.btn_bcsubmit{display:inline-block;border:2px solid #c5c5c5;font-weight:500;border-radius:4px;vertical-align:middle;font-size:17px;line-height:1;padding:14px 14px 15px;min-width:114px;text-align: center;}
+.btn_bcsubmit{display:inline-block;border:2px solid #c5c5c5;position:relative;font-weight:500;border-radius:4px;vertical-align:middle;font-size:17px;line-height:1;padding:14px 14px 15px;min-width:114px;text-align: center;}
 .btn_bcsubmit.dtype2{background-color:#404040;border-color:#404040;color:#fff;}
 .btn_bcsubmit.dtype3{background-color:#4f64bb;border-color:#4f64bb;color:#fff;}
 .btn_bcsubmit.dtype4{background-color:#b14487;border-color:#b14487;color:#fff;}
@@ -1466,6 +1467,10 @@ input.btn_fileupload{position:absolute;top:0;left:0;opacity:0;z-index:0;cursor: 
 .btn_bcsubmit.mintype3{min-width:132px;}
 
 .btn_bcsubmit.htype2{padding:10px 14px 11px;}
+
+.btn_bcsubmit:focus{outline:0;}
+.btn_bcsubmit:focus:after{display:block;content:'';width:calc(100% + 12px);height:calc(100% + 12px);position:absolute;top:-6px;left:-6px;border:2px solid #000;border-radius:6px;box-sizing: border-box;}
+
 
 .vform_titemp_fxwrap{}
 .vform_titemp_fxwrap.ftype2{display:flex;flex-wrap:wrap;align-items: center;}
