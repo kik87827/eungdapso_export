@@ -579,10 +579,14 @@ input.loginput{border:1px solid #c5c9d5;border-radius:3px;box-sizing: border-box
 .vtext_guide_para{font-size:17px;color:#727272;font-weight:500;margin-top:10px;word-break: keep-all;}
 .btn_sctobj_w{text-align:right;margin-top:5px;}
 .btn_sctobj_w.ftype2{display:flex;justify-content: space-between;align-items: center;}
-.btn_sctobj{margin-right:5px;display:inline-block;border-radius:4px;color:#fff;word-break:keep-all;text-align:center;min-width:164px;box-sizing: border-box;padding:14px 15px 16px;font-size:17px;letter-spacing: -1px;font-weight:500;background:#b14487;}
+.btn_sctobj{margin-right:5px;position:relative;display:inline-block;border-radius:4px;color:#fff;word-break:keep-all;text-align:center;min-width:164px;box-sizing: border-box;padding:14px 15px 16px;font-size:17px;letter-spacing: -1px;font-weight:500;background:#b14487;}
 .btn_sctobj:last-of-type{margin-right:0;}
 .btn_sctobj.dtype2{background:#404040;}
 .btn_sctobj.htype2{padding:12px 20px 13px;}
+.btn_sctobj:focus{outline:0;}
+.btn_sctobj:focus:after{display:block;content:'';width:100%;height:100%;border:3px solid #fff;border-radius:2px;position:absolute;top:2px;left:2px;width:calc(100% - 4px);height:calc(100% - 4px);box-sizing: border-box;}
+
+
 .linux .btn_sctobj.htype2{padding-bottom:12px;}
 .sct_vbox.ico_covid19{background-image:url("../images/bg_visual_sub01.png"),url("../images/obj_visual_sub02.png");}
 .sct_vbox.ico_mayor{background-image:url("../images/bg_visual_sub01.png"),url("../images/obj_visual_sub03.png");}
