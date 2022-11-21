@@ -303,31 +303,31 @@ function loginTabFunc(){
 		}
 		$t.attr("title","선택됨");
 	});
-	$(window).on("keydown",function(e){
-        clickis = false;
-    });
-	$sf_intab.on("focusout", function (e) {
-		if(clickis){return;}
-		var $this = $(this);
-		if ($this.hasClass("active")) {
-			$sf_inboxcont.find("a,button,input,select").first().focus();
-		} else {
-			if ($this.hasClass("last")) {
-				$(".ctout_item").focus();
-			}
-		}
-	});
-	$mid_contents.on("focusout",function(){
-		midfocusOut = true;
-	});
-	$mid_contents.on("focusin",function(){
-		midfocusOut = false;
-	});
-	$(".ctout_item").on("focus",function(){
-		if (midfocusOut){
-			$(".sf_intab.active").next().focus();
-		}
-	});
+	// $(window).on("keydown",function(e){
+    //     clickis = false;
+    // });
+	// $sf_intab.on("focusout", function (e) {
+	// 	if(clickis){return;}
+	// 	var $this = $(this);
+	// 	if ($this.hasClass("active")) {
+	// 		$sf_inboxcont.find("a,button,input,select").first().focus();
+	// 	} else {
+	// 		if ($this.hasClass("last")) {
+	// 			$(".ctout_item").focus();
+	// 		}
+	// 	}
+	// });
+	// $mid_contents.on("focusout",function(){
+	// 	midfocusOut = true;
+	// });
+	// $mid_contents.on("focusin",function(){
+	// 	midfocusOut = false;
+	// });
+	// $(".ctout_item").on("focus",function(){
+	// 	if (midfocusOut){
+	// 		$(".sf_intab.active").next().focus();
+	// 	}
+	// });
 }
 
 function subContentsTabFunc(tablist,cont){
